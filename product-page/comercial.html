@@ -1,0 +1,141 @@
+<!-- rose.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Bouquet</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html"><img src="../images/logo.png" alt="Flower Bouquets Store Logo"></a>
+            </div>
+
+            <!-- Navigation links -->
+            <nav>
+                <ul>
+                    <!--Adding the category list to a dropdown menu-->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Bouquets</a>
+                        <div class="dropdown-content">
+                            <a href="rose.html">Roses</a>
+                            <a href="tulip.html">Tulips</a>
+                            <a href="lilies.html">Lilies</a>
+                            <a href="orchids.html">Orchids</a>
+                            <a href="mixed.html">Mixed Bouquets</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Occassion</a>
+                        <div class="dropdown-content">
+                            <a href="wedding.html">Wedding</a>
+                            <a href="birthday.html">Birthday</a>
+                            <a href="congratulations.html">Congratulations</a>
+                            <a href="sorry.html">Sorry</a>
+                            <a href="anniversary.html">Anniversary</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Gifts</a>
+                        <div class="dropdown-content">
+                            <a href="her.html">Gift for Her</a>
+                            <a href="him.html">Gift for Him</a>
+                            <a href="mom.html">Gift for Mom</a>
+                            <a href="dad.html">Gift for Dad</a>
+                            <a href="girlfriend.html">Gift for Girlfriend</a>
+                            <a href="boyfriend.html">Gift for Boyfriend</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Cities</a>
+                        <div class="dropdown-content">
+                            <a href="kolkata.html">Kolkata</a>
+                            <a href="delhi.html">Delhi</a>
+                            <a href="mumbai.html">Mumbai</a>
+                            <a href="bangalore.html">Bangalore</a>
+                            <a href="hyderabad.html">Hyderabad</a>
+                            <a href="cities.html">All Cities</a>
+                        </div>
+                    </li>
+                    <li><a href="../combo.html">Combos</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search for bouquets...">
+                <button type="submit">Search</button>
+            </div>
+
+            <!--Cart button-->
+            <button class="cart-btn">
+                <a href="../cart.html"><img src="../images/cart-icon.png" alt="Cart Icon"></a>
+                <span id="cart-count">0</span> <!-- This will dynamically show the number of items -->
+            </button>
+
+            <!-- Login button -->
+            <div class="login-btn">
+                <a href="../login.html">Login/SignUp</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="category1">
+            <h2>Roses Bouquets</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="../product-page/rose1.html" class="bouquet-card">
+                    <img src="../images/rose1.jpg" alt="Red Rose Bouquet">
+                    <h3>Red Rose Bouquet</h3>
+                    <p>A classic bouquet of fresh red roses.</p>
+                    <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/rose2.html" class="bouquet-card">
+                    <img src="../images/rose2.jpg" alt="White Rose Bouquet">
+                    <h3>White Rose Bouquet</h3>
+                    <p>A beautiful bouquet that symbolises health.</p>
+                    <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/rose3.html" class="bouquet-card">
+                    <img src="../images/rose3.jpg" alt="Pink Rose Bouquet">
+                    <h3>Pink Rose Bouquet</h3>
+                    <p>A beautiful bouquet that symbolises growth.</p>
+                    <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/rose4.html" class="bouquet-card">
+                    <img src="../images/rose4.jpg" alt="Yellow Rose Bouquet">
+                    <h3>Yellow Rose Bouquet</h3>
+                    <p>A beautiful bouquet that symbolises friendship.</p>
+                    <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/rose5.html" class="bouquet-card">
+                    <img src="../images/rose5.jpg" alt="Orange Rose Bouquet">
+                    <h3>Orange Rose Bouquet</h3>
+                    <p>A beautiful bouquet that symbolises empathy.</p>
+                    <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/rose6.html" class="bouquet-card">
+                    <img src="../images/rose6.jpg" alt="Black Rose Bouquet">
+                    <h3>More Rose Bouquet</h3>
+                    <p>A wide range of rose bouquets available for every occassion.</p>
+                    <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <!-- Repeat for more Bouquets -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
