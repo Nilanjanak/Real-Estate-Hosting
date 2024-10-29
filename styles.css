@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #ddd;
 }
 
 header {
@@ -397,8 +397,15 @@ footer {
     max-width: 100%;
     max-height: 300px;
     max-height: 300px;
-    margin: auto;
+    margin: 0 150px;
     overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.slider img {
+    width: 100%; /* Make images responsive */
+    border-radius: 10px;
 }
 
 /* Slides */
@@ -491,81 +498,161 @@ footer {
         grid-template-columns: 1fr; /* 1 card per row for very small devices */
     }
 }
-
-/* Login Styling */
-.login-register-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 20px;
+/* Login Section Styling */
+.login-section {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f3f3f3;
 }
 
-h1 {
-    text-align: center;
+.login-container {
     width: 100%;
-    margin-bottom: 50px;
-}
-.login-section, .register-section {
-    background-color: white;
+    max-width: 400px;
     padding: 30px;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-h2 {
+.login-container h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #1e8ee9;
 }
 
-form {
+.login-container form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
-label {
+.login-container label {
     font-size: 1rem;
-    color: #333;
+    color: #555;
+    margin: 10px 0 5px;
+    text-align: left;
 }
 
-input {
+.login-container input[type="email"],
+.login-container input[type="password"] {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
+    margin-bottom: 15px;
 }
 
-button {
-    padding: 10px 20px;
+.login-button {
+    padding: 12px;
     background-color: #1e8ee9;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #0b538d;
+.login-button:hover {
+    background-color: #133E87;
 }
 
-/* p {
-    text-align: center;
-} */
+.signup-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
 
-p a {
+.signup-link a {
     color: #1e8ee9;
-    text-decoration: none;
-}
-
-p a:hover {
     text-decoration: underline;
 }
+
+.signup-link a:hover {
+    color: #133E87;
+}
+
+/* Registration Section Styling */
+.registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f3f3f3;
+}
+
+.registration-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.registration-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1e8ee9;
+}
+
+.registration-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-container label {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.registration-container input[type="text"],
+.registration-container input[type="email"],
+.registration-container input[type="number"],
+.registration-container input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.register-button {
+    padding: 12px;
+    background-color: #1e8ee9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #133E87;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.login-link a {
+    color: #1e8ee9;
+    text-decoration: underline;
+}
+
+.login-link a:hover {
+    color: #133E87;
+}
+
+
 
 /* Footer */
 footer {
@@ -1061,4 +1148,52 @@ footer {
 
 .get_in_touch {
     text-align: center;
+}
+
+/* Filter Section Styling */
+.filter-section {
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #ddd;
+}
+
+.filter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: 20px;
+}
+
+.filter-container label {
+    font-size: 1rem;
+    color: #555;
+    margin-right: 5px;
+}
+
+.filter-container select,
+.filter-container button {
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-container button {
+    background-color: #1e8ee9;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.filter-container button:hover {
+    background-color: #133E87;
 }

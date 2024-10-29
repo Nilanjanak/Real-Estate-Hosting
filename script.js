@@ -159,3 +159,49 @@ function performSearch() {
     alert(`Searching for: ${query}`);
     // You can add code here to process the search query, such as redirecting to a search results page
 }
+
+function applyFilters() {
+    // Retrieve selected filter values
+    const location = document.getElementById('location').value;
+    const size = document.getElementById('size').value;
+    const cost = document.getElementById('cost').value;
+
+    // Retrieve all product cards
+    const products = document.querySelectorAll('.product-card');
+
+    // Filter products
+    products.forEach(product => {
+        const productLocation = product.getAttribute('data-location');
+        const productSize = product.getAttribute('data-size');
+        const productCost = parseInt(product.getAttribute('data-cost'));
+
+        let showProduct = true;
+
+        // Filter by location
+        if (location !== 'all' && location !== productLocation) {
+            showProduct = false;
+        }
+
+        // Filter by size
+        if (size !== 'all' && size !== productSize) {
+            showProduct = false;
+        }
+
+        // Apply the final display state based on filters
+        product.style.display = showProduct ? 'block' : 'none';
+    });
+
+    // Sort products by cost
+    if (cost !== 'all') {
+        const sortedProducts = [...products].sort((a, b) => {
+            const costA = parseInt(a.getAttribute('data-cost'));
+            const costB = parseInt(b.getAttribute('data-cost'));
+            return cost === 'low-high' ? costA - costB : costB - costA;
+        });
+        
+        // Append sorted products to the grid
+        const productGrid = document.querySelector('.product-grid');
+        productGrid.innerHTML = '';
+        sortedProducts.forEach(product => productGrid.appendChild(product));
+    }
+}
