@@ -28,6 +28,15 @@ header {
     height: auto;
 }
 
+.logo2 img {
+    width: 250px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
 /* Dropdown menu styling */
 nav ul {
     list-style: none;
