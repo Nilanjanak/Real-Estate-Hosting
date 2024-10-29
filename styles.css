@@ -382,7 +382,9 @@ footer {
     color: #1e8ee9;
 }
 
-.footer-contact p {
+.footer-contact p, a {
+    color: white;
+    text-decoration: none;
     margin: 5px 0;
 }
 
