@@ -1208,3 +1208,143 @@ footer {
 .filter-container button:hover {
     background-color: #133E87;
 }
+
+/* Blog Page Styling */
+.blog-post {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-header h1 {
+    font-size: 2rem;
+    color: #133E87;
+}
+
+.blog-header h2 {
+    font-size: 2rem;
+    color: #1e8ee9;
+}
+
+.blog-header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.blog-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-size: 1.5rem;
+    color: #133E87;
+    margin-top: 20px;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    color: #1e8ee9;
+    margin-top: 20px;
+}
+
+article p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 10px;
+}
+
+.related-posts {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.related-posts h3 {
+    font-size: 1.3rem;
+    color: #1e8ee9;
+}
+
+.related-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.related-posts ul li {
+    margin: 8px 0;
+}
+
+.related-posts ul li a {
+    color: #555;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.related-posts ul li a:hover {
+    color: #1e8ee9;
+}
+
+.choose-btn {
+    background-color: #1e8ee9;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 25%;
+    width: 200px;
+    height: 80px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+
+.choose-btn:hover {
+    background-color: #0b538d;
+}
+
+.choose-btn:active {
+    transform: scale(0.95); /* Shrink button slightly on click */
+    background-color: #0b538d;
+}
+
+/* Success message after adding to cart */
+.choose-success {
+    opacity: 0;
+    visibility: hidden;
+    font-size: 0.9rem;
+    color: green;
+    margin-top: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show success message smoothly */
+.choose-success.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.page-head{
+    font-size: 3rem;
+    color: #133E87;
+    margin-left: 2.5%;
+}
+
+.page-head-index{
+    font-size: 3rem;
+    color: #133E87;
+    margin-left: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
