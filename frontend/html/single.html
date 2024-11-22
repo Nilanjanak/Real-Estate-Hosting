@@ -1,0 +1,412 @@
+<!-- single.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lease Residential</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--Header-->
+    <my-header></my-header>
+    <div class="slide"></div>
+    <main class="product-page-display">
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+        <div class="filter-container">
+            <h3>Filter search</h3>
+            <form id="filterForm">
+                <!-- Type Filter -->
+                <label for="type">Type:</label>
+                <select id="type" name="type">
+                    <option value="All">All</option>
+                    <option value="Less than 3BHK">Less than 3BHK</option>
+                    <option value="More than 3BHK">More than 3BHK</option>
+                    <option value="Society Apartment">Society Apartment</option>
+                    <option value="Independent Bunglow">Independent Bunglow</option>
+                    <option value="Apartments">Apartments</option>
+                    <option value="Vacation Homes">Vacation Homes</option>
+                </select>
+
+                <!-- Location Filter -->
+                <label for="location">Location:</label>
+                <select id="location" name="location">
+                    <option value="all">All</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Gurugram">Gurugram</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Jaipur">Jaipur</option>
+                </select>
+
+                <!-- Distance Filter -->
+                <!-- <label for="distance">Distance:</label>
+                <select id="distance" name="distance">
+                    <option value="all">All</option>
+                    <option value="5km">5km</option>
+                    <option value="10km">10km</option>
+                    <option value="25km">25km</option>
+                    <option value="More than 25km">More than 25km</option>
+                </select> -->
+
+                <!-- Size Filter -->
+                <label for="size">Size:</label>
+                <select id="size" name="size">
+                    <option value="all">All</option>
+                    <option value="1BHK">1BHK</option>
+                    <option value="2BHK">2BHK</option>
+                    <option value="3BHK">3BHK</option>
+                    <option value="More than 3BHK+">More than 3BHK</option>
+                </select>
+
+                <!-- Cost Filter -->
+                <label for="cost">Cost:</label>
+                <select id="cost" name="cost">
+                    <option value="All">All</option>
+                    <option value="0-5Lacs">0-5Lacs</option>
+                    <option value="5-15Lacs">5-15Lacs</option>
+                    <option value="15-30Lacs">15-30Lacs</option>
+                    <option value="30-1Cr">30-1Cr</option>
+                    <option value="1-5Cr">1-5Cr</option>
+                    <option value="More than 5Cr">More than 5Cr</option>
+                </select>
+
+                <!-- Sort Filter -->
+                <label for="sort">Sort:</label>
+                <select id="sort" name="sort">
+                    <option value="relevant">Relevant</option>
+                    <option value="low-high">Low to High</option>
+                    <option value="high-low">High to Low</option>
+                </select>
+
+                <!-- Submit Button -->
+                <button type="button" onclick="applyFilters()">Apply Filters</button>
+            </form>
+        </div>
+        </section>
+
+
+        <h1 class="page-head">Rent Residential Property</h1>
+
+        <section id="category1" class="bouquet-section">
+
+            <h2>Less than 3BHK</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="../product-page/single1.html" class="bouquet-card">
+                    <img src="../images/single1.jpg" alt="single-Family Homes">
+                    <h3>single-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/single2.html" class="bouquet-card">
+                    <img src="../images/single2.jpg" alt="single-Family Homes">
+                    <h3>single-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/single3.html" class="bouquet-card">
+                    <img src="../images/single3.jpg" alt="single-Family Homes">
+                    <h3>single-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/single4.html" class="bouquet-card">
+                    <img src="../images/single4.jpg" alt="single-Family Homes">
+                    <h3>single-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/single5.html" class="bouquet-card">
+                    <img src="../images/single5.jpg" alt="single-Family Homes">
+                    <h3>single-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/single6.html" class="bouquet-card">
+                    <img src="../images/single6.jpg" alt="single-Family Homes">
+                    <h3>single-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <!-- Repeat for more Properties -->
+            </div>
+        </section>
+
+        <section id="category1" class="bouquet-section">
+
+            <h2>More than 3BHK</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="../product-page/multi1.html" class="bouquet-card">
+                    <img src="../images/multi1.jpg" alt="Multi-Family Homes">
+                    <h3>Multi-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/multi2.html" class="bouquet-card">
+                    <img src="../images/multi2.jpg" alt="Multi-Family Homes">
+                    <h3>Multi-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/multi3.html" class="bouquet-card">
+                    <img src="../images/multi3.jpg" alt="Multi-Family Homes">
+                    <h3>Multi-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/multi4.html" class="bouquet-card">
+                    <img src="../images/multi4.jpg" alt="Multi-Family Homes">
+                    <h3>Multi-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/multi5.html" class="bouquet-card">
+                    <img src="../images/multi5.jpg" alt="Multi-Family Homes">
+                    <h3>Multi-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/multi6.html" class="bouquet-card">
+                    <img src="../images/multi6.jpg" alt="Multi-Family Homes">
+                    <h3>Multi-Family Homes</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <!-- Repeat for more Properties -->
+            </div>
+        </section>
+
+        <section id="category1" class="bouquet-section">
+
+            <h2>Society Apartment</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="../product-page/condos1.html" class="bouquet-card">
+                    <img src="../images/condos1.jpg" alt="Condominiums">
+                    <h3>Condominiums</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/condos2.html" class="bouquet-card">
+                    <img src="../images/condos2.jpg" alt="Condominiums">
+                    <h3>Condominiums</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/condos3.html" class="bouquet-card">
+                    <img src="../images/condos3.jpg" alt="Condominiums">
+                    <h3>Condominiums</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/condos4.html" class="bouquet-card">
+                    <img src="../images/condos4.jpg" alt="Condominiums">
+                    <h3>Condominiums</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/condos5.html" class="bouquet-card">
+                    <img src="../images/condos5.jpg" alt="Condominiums">
+                    <h3>Condominiums</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/condos6.html" class="bouquet-card">
+                    <img src="../images/condos6.jpg" alt="Condominiums">
+                    <h3>Condominiums</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <!-- Repeat for more Properties -->
+            </div>
+        </section>
+
+        <section id="category1" class="bouquet-section">
+
+            <h2>Independent Bunglow</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="../product-page/townhouse1.html" class="bouquet-card">
+                    <img src="../images/townhouse1.jpg" alt="Townhouse">
+                    <h3>Townhouse</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/townhouse2.html" class="bouquet-card">
+                    <img src="../images/townhouse2.jpg" alt="Townhouse">
+                    <h3>Townhouse</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/townhouse3.html" class="bouquet-card">
+                    <img src="../images/townhouse3.jpg" alt="Townhouse">
+                    <h3>Townhouse</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/townhouse4.html" class="bouquet-card">
+                    <img src="../images/townhouse4.jpg" alt="Townhouse">
+                    <h3>Townhouse</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/townhouse5.html" class="bouquet-card">
+                    <img src="../images/townhouse5.jpg" alt="Townhouse">
+                    <h3>Townhouse</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/townhouse6.html" class="bouquet-card">
+                    <img src="../images/townhouse6.jpg" alt="Townhouse">
+                    <h3>Townhouse</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <!-- Repeat for more Properties -->
+            </div>
+        </section>
+
+        <section id="category1" class="bouquet-section">
+
+            <h2>Apartments</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="../product-page/apartment1.html" class="bouquet-card">
+                    <img src="../images/apartment1.jpg" alt="Apartment">
+                    <h3>Apartment</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/apartment2.html" class="bouquet-card">
+                    <img src="../images/apartment2.jpg" alt="Apartment">
+                    <h3>Apartment</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/apartment3.html" class="bouquet-card">
+                    <img src="../images/apartment3.jpg" alt="Apartment">
+                    <h3>Apartment</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/apartment4.html" class="bouquet-card">
+                    <img src="../images/apartment4.jpg" alt="Apartment">
+                    <h3>Apartment</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/apartment5.html" class="bouquet-card">
+                    <img src="../images/apartment5.jpg" alt="Apartment">
+                    <h3>Apartment</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/apartment6.html" class="bouquet-card">
+                    <img src="../images/apartment6.jpg" alt="Apartment">
+                    <h3>Apartment</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <!-- Repeat for more Properties -->
+            </div>
+        </section>
+
+        <section id="category1" class="bouquet-section">
+
+            <h2>Vacation Homes</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="../product-page/vacation1.html" class="bouquet-card">
+                    <img src="../images/vacation1.jpg" alt="Vacation">
+                    <h3>Vacation</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/vacation2.html" class="bouquet-card">
+                    <img src="../images/vacation2.jpg" alt="Vacation">
+                    <h3>Vacation</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/vacation3.html" class="bouquet-card">
+                    <img src="../images/vacation3.jpg" alt="Vacation">
+                    <h3>Vacation</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/vacation4.html" class="bouquet-card">
+                    <img src="../images/vacation4.jpg" alt="Vacation">
+                    <h3>Vacation</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/vacation5.html" class="bouquet-card">
+                    <img src="../images/vacation5.jpg" alt="Vacation">
+                    <h3>Vacation</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="../product-page/vacation6.html" class="bouquet-card">
+                    <img src="../images/vacation6.jpg" alt="Vacation">
+                    <h3>Vacation</h3><br>
+                    <p>Stand-alone houses designed for one family.</p><br>
+                    <span class="price">$350 000.00</span><br><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <!-- Repeat for more Properties -->
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <my-footer></my-footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
