@@ -6,6 +6,7 @@ const authRoutes = require("./routes/authRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 const passwordRoutes = require("./routes/passwordRoutes");
 const contactRoutes = require("./routes/contactRoutes");
+const enquiryRoutes = require("./routes/enquiryRoutes");
 
 require("dotenv").config();
 

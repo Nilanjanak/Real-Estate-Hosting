@@ -1,405 +1,200 @@
-<!-- single.html -->
+<!-- residential_surat.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Residential</title>
+    <title>Residential Projects in Surat</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!--Header-->
+    <!-- Header -->
     <my-header></my-header>
     <div class="slide"></div>
     <main class="product-page-display">
 
         <!-- Filter Section -->
         <section class="filter-section">
-        <div class="filter-container">
-            <h3>Filter search</h3>
-            <form id="filterForm">
-                <!-- Type Filter -->
-                <label for="type">Type:</label>
-                <select id="type" name="type">
-                    <option value="All">All</option>
-                    <option value="Less than 3BHK">Less than 3BHK</option>
-                    <option value="More than 3BHK">More than 3BHK</option>
-                    <option value="Society Apartment">Society Apartment</option>
-                    <option value="Independent Bunglow">Independent Bunglow</option>
-                    <option value="Apartments">Apartments</option>
-                    <option value="Vacation Homes">Vacation Homes</option>
-                </select>
+            <div class="filter-container">
+                <h3>Filter Search</h3>
+                <form id="filterForm">
+                    <label for="type">Type:</label>
+                    <select id="type">
+                        <option value="Residential">Residential</option>
+                    </select>
 
-                <!-- Location Filter -->
-                <label for="location">Location:</label>
-                <select id="location" name="location">
-                    <option value="all">All</option>
-                    <option value="Kolkata">Kolkata</option>
-                    <option value="Delhi">Delhi</option>
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Pune">Pune</option>
-                    <option value="Bangalore">Bangalore</option>
-                    <option value="Hyderabad">Hyderabad</option>
-                    <option value="Gurugram">Gurugram</option>
-                    <option value="Chennai">Chennai</option>
-                    <option value="Jaipur">Jaipur</option>
-                </select>
+                    <label for="location">Location:</label>
+                    <select id="location">
+                        <option value="all">All</option>
+                        <option value="Surat">Surat</option>
+                        <!-- <option value="Kolkata">Kolkata</option> -->
+                    </select>
 
-                <!-- Distance Filter -->
-                <!-- <label for="distance">Distance:</label>
-                <select id="distance" name="distance">
-                    <option value="all">All</option>
-                    <option value="5km">5km</option>
-                    <option value="10km">10km</option>
-                    <option value="25km">25km</option>
-                    <option value="More than 25km">More than 25km</option>
-                </select> -->
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="all">All</option>
+                        <option value="1 BHK">1 BHK</option>
+                        <option value="2 BHK">2 BHK</option>
+                        <option value="3 BHK">3 BHK</option>
+                        <option value="4 BHK+">4 BHK+</option>
+                    </select>
 
-                <!-- Size Filter -->
-                <label for="size">Size:</label>
-                <select id="size" name="size">
-                    <option value="all">All</option>
-                    <option value="1BHK">1BHK</option>
-                    <option value="2BHK">2BHK</option>
-                    <option value="3BHK">3BHK</option>
-                    <option value="More than 3BHK+">More than 3BHK</option>
-                </select>
+                    <label for="cost">Cost:</label>
+                    <select id="cost">
+                        <option value="All">All</option>
+                        <option value="50L">Up to 50L</option>
+                        <option value="1Cr">50L to 1Cr</option>
+                        <option value="1Cr+">Above 1Cr</option>
+                    </select>
 
-                <!-- Cost Filter -->
-                <label for="cost">Cost:</label>
-                <select id="cost" name="cost">
-                    <option value="All">All</option>
-                    <option value="0-5Lacs">0-5Lacs</option>
-                    <option value="5-15Lacs">5-15Lacs</option>
-                    <option value="15-30Lacs">15-30Lacs</option>
-                    <option value="30-1Cr">30-1Cr</option>
-                    <option value="1-5Cr">1-5Cr</option>
-                    <option value="More than 5Cr">More than 5Cr</option>
-                </select>
+                    <label for="sort">Sort:</label>
+                    <select id="sort" onchange="applyFilters()">
+                        <option value="default">Default</option>
+                        <option value="low-high">Price: Low to High</option>
+                        <option value="high-low">Price: High to Low</option>
+                    </select>
 
-                <!-- Sort Filter -->
-                <label for="sort">Sort:</label>
-                <select id="sort" name="sort">
-                    <option value="relevant">Relevant</option>
-                    <option value="low-high">Low to High</option>
-                    <option value="high-low">High to Low</option>
-                </select>
-
-                <!-- Submit Button -->
-                <button type="button" onclick="applyFilters()">Apply Filters</button>
-            </form>
-        </div>
-        </section>
-
-
-        <h1 class="page-head">Purchase Residential Property</h1>
-
-        <section id="category1" class="bouquet-section">
-
-            <h2>Less than 3BHK</h2>
-            <div class="bouquet-grid">
-                <!-- Rose Bouquet Card with Link -->
-                <a href="../product-page/single1.html" class="bouquet-card">
-                    <img src="../images/single1.jpg" alt="single-Family Homes">
-                    <h3>single-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/single2.html" class="bouquet-card">
-                    <img src="../images/single2.jpg" alt="single-Family Homes">
-                    <h3>single-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/single3.html" class="bouquet-card">
-                    <img src="../images/single3.jpg" alt="single-Family Homes">
-                    <h3>single-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/single4.html" class="bouquet-card">
-                    <img src="../images/single4.jpg" alt="single-Family Homes">
-                    <h3>single-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/single5.html" class="bouquet-card">
-                    <img src="../images/single5.jpg" alt="single-Family Homes">
-                    <h3>single-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/single6.html" class="bouquet-card">
-                    <img src="../images/single6.jpg" alt="single-Family Homes">
-                    <h3>single-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <!-- Repeat for more Properties -->
+                    <button type="button" onclick="applyFilters()">Apply Filters</button>
+                </form>
             </div>
         </section>
+        
+        <h1 class="page-head">Residential Projects in Surat</h1>
 
         <section id="category1" class="bouquet-section">
+            
+            <div id="results" class="bouquet-grid">
+                <!-- Project 1 -->
+                <a href="project1.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="2 BHK" 
+                   data-cost="50L">
+                    <img src="images/surat_project1.jpg" alt="Surat Project 1">
+                    <h3>Surat Greens</h3>
+                    <p>Located near Surat Railway Station, offering 2-3 BHK flats starting from ₹25 Lakhs.</p>
+                    <span class="price">₹25L - ₹40L</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
 
-            <h2>More than 3BHK</h2>
-            <div class="bouquet-grid">
-                <!-- Rose Bouquet Card with Link -->
-                <a href="../product-page/multi1.html" class="bouquet-card">
-                    <img src="../images/multi1.jpg" alt="Multi-Family Homes">
-                    <h3>Multi-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
+                <!-- Project 2 -->
+                <a href="project2.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="3 BHK" 
+                   data-cost="1Cr">
+                    <img src="images/surat_project2.jpg" alt="Surat Project 2">
+                    <h3>Surat Central Residency</h3>
+                    <p>Luxury 3 BHK flats with all modern amenities in the heart of Surat.</p>
+                    <span class="price">₹50L - ₹1Cr</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
                 </a>
-                <a href="../product-page/multi2.html" class="bouquet-card">
-                    <img src="../images/multi2.jpg" alt="Multi-Family Homes">
-                    <h3>Multi-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
+
+                <!-- Project 3 -->
+                <a href="project3.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="2 BHK" 
+                   data-cost="50L">
+                    <img src="images/surat_project3.jpg" alt="Surat Project 3">
+                    <h3>Royal Residency</h3>
+                    <p>Located near Dumas Beach, offering premium 2-3 BHK flats starting at ₹35 Lakhs.</p>
+                    <span class="price">₹35L - ₹55L</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
                 </a>
-                <a href="../product-page/multi3.html" class="bouquet-card">
-                    <img src="../images/multi3.jpg" alt="Multi-Family Homes">
-                    <h3>Multi-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
+
+                <!-- Project 4 -->
+                <a href="project4.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="3 BHK" 
+                   data-cost="1Cr">
+                    <img src="images/surat_project4.jpg" alt="Surat Project 4">
+                    <h3>Surat Signature Towers</h3>
+                    <p>Luxurious 3 BHK apartments with top-notch facilities in Surat's prime location.</p>
+                    <span class="price">₹1Cr - ₹1.5Cr</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
                 </a>
-                <a href="../product-page/multi4.html" class="bouquet-card">
-                    <img src="../images/multi4.jpg" alt="Multi-Family Homes">
-                    <h3>Multi-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
+
+                <!-- Project 5 -->
+                <a href="project5.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="1 BHK" 
+                   data-cost="50L">
+                    <img src="images/surat_project5.jpg" alt="Surat Project 5">
+                    <h3>Crystal Residency</h3>
+                    <p>Affordable 1 BHK apartments with great connectivity to the city center.</p>
+                    <span class="price">₹25L - ₹40L</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
                 </a>
-                <a href="../product-page/multi5.html" class="bouquet-card">
-                    <img src="../images/multi5.jpg" alt="Multi-Family Homes">
-                    <h3>Multi-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
+
+                <!-- Project 6 -->
+                <a href="project6.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="2 BHK" 
+                   data-cost="50L">
+                    <img src="images/surat_project6.jpg" alt="Surat Project 6">
+                    <h3>Sunshine Heights</h3>
+                    <p>Modern 2 BHK flats with all essential amenities.</p>
+                    <span class="price">₹30L - ₹50L</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
                 </a>
-                <a href="../product-page/multi6.html" class="bouquet-card">
-                    <img src="../images/multi6.jpg" alt="Multi-Family Homes">
-                    <h3>Multi-Family Homes</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
+
+                <!-- Project 7 -->
+                <a href="project7.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="3 BHK" 
+                   data-cost="1Cr">
+                    <img src="images/surat_project7.jpg" alt="Surat Project 7">
+                    <h3>The Imperial Residency</h3>
+                    <p>High-end 3 BHK flats with luxury amenities and scenic views.</p>
+                    <span class="price">₹90L - ₹1.2Cr</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
                 </a>
-                <!-- Repeat for more Properties -->
+
+                <!-- Project 8 -->
+                <a href="project8.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="2 BHK" 
+                   data-cost="50L">
+                    <img src="images/surat_project8.jpg" alt="Surat Project 8">
+                    <h3>Vibrant Heights</h3>
+                    <p>Stylish 2 BHK flats near Surat city center.</p>
+                    <span class="price">₹45L - ₹60L</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 9 -->
+                <a href="project9.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="3 BHK" 
+                   data-cost="1Cr">
+                    <img src="images/surat_project9.jpg" alt="Surat Project 9">
+                    <h3>Surat Heights</h3>
+                    <p>Spacious 3 BHK flats with top-class facilities.</p>
+                    <span class="price">₹70L - ₹1Cr</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 10 -->
+                <a href="project10.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="4 BHK+" 
+                   data-cost="1Cr+">
+                    <img src="images/surat_project10.jpg" alt="Surat Project 10">
+                    <h3>Surat Luxe Apartments</h3>
+                    <p>Exclusive 4 BHK+ apartments with all premium amenities in Surat.</p>
+                    <span class="price">₹1.5Cr - ₹2.5Cr</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
             </div>
         </section>
-
-        <section id="category1" class="bouquet-section">
-
-            <h2>Society Apartment</h2>
-            <div class="bouquet-grid">
-                <!-- Rose Bouquet Card with Link -->
-                <a href="../product-page/condos1.html" class="bouquet-card">
-                    <img src="../images/condos1.jpg" alt="Condominiums">
-                    <h3>Condominiums</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/condos2.html" class="bouquet-card">
-                    <img src="../images/condos2.jpg" alt="Condominiums">
-                    <h3>Condominiums</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/condos3.html" class="bouquet-card">
-                    <img src="../images/condos3.jpg" alt="Condominiums">
-                    <h3>Condominiums</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/condos4.html" class="bouquet-card">
-                    <img src="../images/condos4.jpg" alt="Condominiums">
-                    <h3>Condominiums</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/condos5.html" class="bouquet-card">
-                    <img src="../images/condos5.jpg" alt="Condominiums">
-                    <h3>Condominiums</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/condos6.html" class="bouquet-card">
-                    <img src="../images/condos6.jpg" alt="Condominiums">
-                    <h3>Condominiums</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <!-- Repeat for more Properties -->
-            </div>
-        </section>
-
-        <section id="category1" class="bouquet-section">
-
-            <h2>Independent Bunglow</h2>
-            <div class="bouquet-grid">
-                <!-- Rose Bouquet Card with Link -->
-                <a href="../product-page/townhouse1.html" class="bouquet-card">
-                    <img src="../images/townhouse1.jpg" alt="Townhouse">
-                    <h3>Townhouse</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/townhouse2.html" class="bouquet-card">
-                    <img src="../images/townhouse2.jpg" alt="Townhouse">
-                    <h3>Townhouse</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/townhouse3.html" class="bouquet-card">
-                    <img src="../images/townhouse3.jpg" alt="Townhouse">
-                    <h3>Townhouse</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/townhouse4.html" class="bouquet-card">
-                    <img src="../images/townhouse4.jpg" alt="Townhouse">
-                    <h3>Townhouse</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/townhouse5.html" class="bouquet-card">
-                    <img src="../images/townhouse5.jpg" alt="Townhouse">
-                    <h3>Townhouse</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/townhouse6.html" class="bouquet-card">
-                    <img src="../images/townhouse6.jpg" alt="Townhouse">
-                    <h3>Townhouse</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <!-- Repeat for more Properties -->
-            </div>
-        </section>
-
-        <section id="category1" class="bouquet-section">
-
-            <h2>Apartments</h2>
-            <div class="bouquet-grid">
-                <!-- Rose Bouquet Card with Link -->
-                <a href="../product-page/apartment1.html" class="bouquet-card">
-                    <img src="../images/apartment1.jpg" alt="Apartment">
-                    <h3>Apartment</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/apartment2.html" class="bouquet-card">
-                    <img src="../images/apartment2.jpg" alt="Apartment">
-                    <h3>Apartment</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/apartment3.html" class="bouquet-card">
-                    <img src="../images/apartment3.jpg" alt="Apartment">
-                    <h3>Apartment</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/apartment4.html" class="bouquet-card">
-                    <img src="../images/apartment4.jpg" alt="Apartment">
-                    <h3>Apartment</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/apartment5.html" class="bouquet-card">
-                    <img src="../images/apartment5.jpg" alt="Apartment">
-                    <h3>Apartment</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/apartment6.html" class="bouquet-card">
-                    <img src="../images/apartment6.jpg" alt="Apartment">
-                    <h3>Apartment</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <!-- Repeat for more Properties -->
-            </div>
-        </section>
-
-        <section id="category1" class="bouquet-section">
-
-            <h2>Vacation Homes</h2>
-            <div class="bouquet-grid">
-                <!-- Rose Bouquet Card with Link -->
-                <a href="../product-page/vacation1.html" class="bouquet-card">
-                    <img src="../images/vacation1.jpg" alt="Vacation">
-                    <h3>Vacation</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/vacation2.html" class="bouquet-card">
-                    <img src="../images/vacation2.jpg" alt="Vacation">
-                    <h3>Vacation</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/vacation3.html" class="bouquet-card">
-                    <img src="../images/vacation3.jpg" alt="Vacation">
-                    <h3>Vacation</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/vacation4.html" class="bouquet-card">
-                    <img src="../images/vacation4.jpg" alt="Vacation">
-                    <h3>Vacation</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/vacation5.html" class="bouquet-card">
-                    <img src="../images/vacation5.jpg" alt="Vacation">
-                    <h3>Vacation</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <a href="../product-page/vacation6.html" class="bouquet-card">
-                    <img src="../images/vacation6.jpg" alt="Vacation">
-                    <h3>Vacation</h3><br>
-                    <p>Stand-alone houses designed for one family.</p><br>
-                    <span class="price">$350 000.00</span><br><br><br>
-                    <button class="add-to-cart-btn">Add to Cart</button>
-                </a>
-                <!-- Repeat for more Properties -->
-            </div>
-        </section>
-
 
     </main>
 

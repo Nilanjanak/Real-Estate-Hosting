@@ -8,8 +8,8 @@ const crypto = require("crypto");
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "nilanjan.ak143@gmail.com", // Replace with your email
-    pass: "obuk znxt rvaj euvs", // Replace with your app password
+    user: "allenareworksheet@gmail.com", // Fixed email for sending emails
+    pass: "mnsd txog yexj nnma", // App password for authentication
   },
 });
 
@@ -47,7 +47,7 @@ router.post("/forgot-password", async (req, res) => {
 
     // Send email
     const mailOptions = {
-      from: "nilanjan.ak143@gmail.com",
+      from: "allenareworksheet@gmail.com",
       to: email,
       subject: "Password Reset Request",
       html: `

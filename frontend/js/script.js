@@ -60,23 +60,29 @@ function getUserName() {
 
 // Header Component
 class myHeader extends HTMLElement {
-  connectedCallback() {
-    const isLoggedIn = isAuthenticated();
-    const userName = getUserName();
-
-    // Create the login/user section HTML based on login status
-    const loginSection = isLoggedIn
-      ? `
-<div class="user-section">
-            <span class="user-name">Welcome</span>
-          <button onclick="handleLogout()" class="logout-btn">Logout</button>
+    connectedCallback() {
+      const isLoggedIn = isAuthenticated();
+      const userName = getUserName();
+  
+      // Create the login/user section HTML based on login status
+      const loginSection = isLoggedIn
+        ? `
+        <div class="profile-container">
+            <button class="profile-button" onclick="toggleDropdown()">Profile</button>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <span class="user-name">${userName}</span>
+                <a href="orders.html" class="dropdown-item">Orders</a>
+                <a href="settings.html" class="dropdown-item">Profile Settings</a>
+                <a href="address.html" class="dropdown-item">My Address</a>
+                <a onclick="handleLogout()" class="dropdown-item">Logout</a>
+            </div>
         </div>
-      `
-      : `
-        <div class="login-btn">
-          <a href="login.html">Login/SignUp</a>
-        </div>
-      `;
+        `
+        : `
+          <div class="login-btn">
+            <a href="login.html">Login/Register</a>
+          </div>
+        `;
 
     this.innerHTML = `
       <header>
@@ -180,8 +186,8 @@ class myFooter extends HTMLElement {
         
         <div class="footer-contact">
             <h3>Contact Us</h3>
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsTNGvmGMnQRNgHHfdHQZllXghnjldXWkJlNxVHBMGSGCqhJsxTWPNJxlMZQpmtRdVLqTLHG">Email: support@realestate.com</a>
-            <p>Phone: +1 (123) 456-7890</p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMSqmSktsRmhMnPrGtFLKkCNxCxCJWJJQmlzxSldvvxGnsVSmKtqkWRWLtLXjhZfzRcTMQ">Email: allenareworksheet@gmail.com</a>
+            <p>Phone: +91 1234567890</p>
             <a href="https://www.google.com/maps/place/Allenare+Technology+Private+Limited/@22.7668801,88.3748032,17z/data=!3m1!4b1!4m6!3m5!1s0x39f89b1013862b09:0xa4337fb26848e87!8m2!3d22.7668752!4d88.3773781!16s%2Fg%2F11w1rbgfdc?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">Address: 123 Real Street, Estate City, RE 12345</a>
         </div>
     </div>
@@ -371,3 +377,317 @@ function applyFilters() {
         sortedProducts.forEach(product => productGrid.appendChild(product));
     }
 }
+
+
+// Toggle the visibility of the dropdown menu
+function toggleDropdown() {
+    const dropdown = document.getElementById('dropdownMenu');
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
+
+// Close the dropdown if the user clicks outside of it
+window.addEventListener('click', function (event) {
+    const dropdown = document.getElementById('dropdownMenu');
+    const profileButton = document.querySelector('.profile-button');
+    if (!profileButton.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.style.display = 'none';
+    }
+});
+
+// Get DOM elements
+const editSaveButton = document.getElementById("edit-save-button");
+const profilePicture = document.getElementById("profile-picture");
+const uploadPicture = document.getElementById("upload-picture");
+const fullNameDisplay = document.getElementById("full-name-display");
+const fullNameEdit = document.getElementById("full-name-edit");
+const emailDisplay = document.getElementById("email-display");
+const emailEdit = document.getElementById("email-edit");
+const addressDisplay = document.getElementById("address-display");
+const addressEdit = document.getElementById("address-edit");
+
+let isEditing = false;
+
+// Toggle edit mode
+editSaveButton.addEventListener("click", () => {
+    if (isEditing) {
+        // Save changes
+        fullNameDisplay.textContent = fullNameEdit.value;
+        emailDisplay.textContent = emailEdit.value;
+        addressDisplay.textContent = addressEdit.value;
+
+        // Switch to view mode
+        toggleEditMode(false);
+        editSaveButton.textContent = "Edit Profile";
+    } else {
+        // Switch to edit mode
+        toggleEditMode(true);
+        editSaveButton.textContent = "Save Changes";
+    }
+
+    isEditing = !isEditing;
+});
+
+// Switch between edit and view modes
+function toggleEditMode(editMode) {
+    fullNameDisplay.style.display = editMode ? "none" : "block";
+    fullNameEdit.style.display = editMode ? "block" : "none";
+
+    emailDisplay.style.display = editMode ? "none" : "inline";
+    emailEdit.style.display = editMode ? "inline" : "none";
+
+    addressDisplay.style.display = editMode ? "none" : "inline";
+    addressEdit.style.display = editMode ? "inline" : "none";
+}
+
+// Handle profile picture click
+profilePicture.addEventListener("click", () => {
+    uploadPicture.click();
+});
+
+// Update profile picture preview
+uploadPicture.addEventListener("change", (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        profilePicture.src = URL.createObjectURL(file);
+    }
+});
+
+
+let addressList = [
+    "1234 Elm Street, Springfield",
+    "4567 Maple Avenue, Lincoln",
+    "8901 Oak Drive, Fairview"
+];
+
+// Render address list dynamically
+function renderAddressList() {
+    const addressListContainer = document.getElementById("address-list");
+    addressListContainer.innerHTML = ""; // Clear the list before rendering
+    addressList.forEach((address, index) => {
+        const li = document.createElement("li");
+        li.classList.add("address-item");
+        li.innerHTML = `${address} 
+            <button class="edit-btn" onclick="editAddress(${index})">Edit</button>
+            <button class="delete-btn" onclick="deleteAddress(${index})">Delete</button>`;
+        addressListContainer.appendChild(li);
+    });
+}
+
+// Edit Address
+function editAddress(index) {
+    const newAddress = prompt("Edit Address:", addressList[index]);
+    if (newAddress) {
+        addressList[index] = newAddress;
+        renderAddressList();
+    }
+}
+
+// Delete Address
+function deleteAddress(index) {
+    if (confirm("Are you sure you want to delete this address?")) {
+        addressList.splice(index, 1);
+        renderAddressList();
+    }
+}
+
+// Show popup to add new address
+document.getElementById("add-address-btn").addEventListener("click", function () {
+    const popup = document.getElementById("address-form-popup");
+    popup.style.display = "block";
+});
+
+// Cancel button hides popup
+document.getElementById("cancel-btn").addEventListener("click", function () {
+    const popup = document.getElementById("address-form-popup");
+    popup.style.display = "none";
+});
+
+// Save new address logic
+document.getElementById("save-address-btn").addEventListener("click", function () {
+    const newAddress = document.getElementById("address-input").value.trim();
+    if (newAddress) {
+        addressList.push(newAddress);
+        renderAddressList();
+        document.getElementById("address-form-popup").style.display = "none";
+        document.getElementById("address-input").value = "";
+    } else {
+        alert("Please enter a valid address.");
+    }
+});
+
+// Initial rendering of the address list
+renderAddressList();
+
+function applyFilters() {
+    const typeFilter = document.getElementById('type').value;
+    const locationFilter = document.getElementById('location').value;
+    const sizeFilter = document.getElementById('size').value;
+    const costFilter = document.getElementById('cost').value;
+
+    const properties = document.querySelectorAll('.bouquet-card');
+    
+    // Loop through all properties and show/hide based on filters
+    properties.forEach(property => {
+        const type = property.getAttribute('data-type');
+        const location = property.getAttribute('data-location');
+        const size = property.getAttribute('data-size');
+        const cost = property.getAttribute('data-cost');
+
+        let showProperty = true;
+
+        // Apply type filter
+        if (typeFilter !== 'All' && type !== typeFilter) {
+            showProperty = false;
+        }
+
+        // Apply location filter
+        if (locationFilter !== 'all' && location !== locationFilter) {
+            showProperty = false;
+        }
+
+        // Apply size filter
+        if (sizeFilter !== 'all' && size !== sizeFilter) {
+            showProperty = false;
+        }
+
+        // Apply cost filter
+        if (costFilter !== 'All' && cost !== costFilter) {
+            showProperty = false;
+        }
+
+        // Show/hide property based on criteria
+        if (showProperty) {
+            property.style.display = 'block';
+        } else {
+            property.style.display = 'none';
+        }
+    });
+}
+
+// function applyFilters() {
+//     const typeFilter = document.getElementById('type').value;
+//     const locationFilter = document.getElementById('location').value;
+//     const sizeFilter = document.getElementById('size').value;
+//     const costFilter = document.getElementById('cost').value;
+//     const sortFilter = document.getElementById('sort').value;
+
+//     const properties = Array.from(document.querySelectorAll('.bouquet-card')); // Convert NodeList to Array
+
+//     // Filter properties based on the selected filters
+//     const filteredProperties = properties.filter(property => {
+//         const type = property.getAttribute('data-type');
+//         const location = property.getAttribute('data-location');
+//         const size = property.getAttribute('data-size');
+//         const cost = parseFloat(property.getAttribute('data-cost'));
+
+//         let showProperty = true;
+
+//         // Apply type filter
+//         if (typeFilter !== 'All' && type !== typeFilter) {
+//             showProperty = false;
+//         }
+
+//         // Apply location filter
+//         if (locationFilter !== 'all' && location !== locationFilter) {
+//             showProperty = false;
+//         }
+
+//         // Apply size filter
+//         if (sizeFilter !== 'all' && size !== sizeFilter) {
+//             showProperty = false;
+//         }
+
+//         // Apply cost filter
+//         if (costFilter !== 'All') {
+//             const costRange = costFilter.split('-').map(Number); // Parse range like '50-100'
+//             if (cost < costRange[0] || cost > costRange[1]) {
+//                 showProperty = false;
+//             }
+//         }
+
+//         return showProperty;
+//     });
+
+//     // Sort the filtered properties based on the sort filter
+//     if (sortFilter === 'low-to-high') {
+//         filteredProperties.sort((a, b) => parseFloat(a.getAttribute('data-cost')) - parseFloat(b.getAttribute('data-cost')));
+//     } else if (sortFilter === 'high-to-low') {
+//         filteredProperties.sort((a, b) => parseFloat(b.getAttribute('data-cost')) - parseFloat(a.getAttribute('data-cost')));
+//     }
+
+//     // Clear current property display and re-render sorted/filtered properties
+//     const propertyContainer = document.querySelector('.properties-container'); // Replace with your container class
+//     propertyContainer.innerHTML = ''; // Clear current properties
+
+//     filteredProperties.forEach(property => {
+//         property.style.display = 'block'; // Ensure property is visible
+//         propertyContainer.appendChild(property); // Add to container
+//     });
+// }
+
+// Conversion factors for different units based on 1 sqft
+
+
+// Conversion factors for different units based on 1 sqft
+
+
+// Conversion factors for different units based on 1 sqft
+
+
+const conversionFactors = {
+    sqft: 1,
+    sqm: 0.092903,  // square meters
+    sqyd: 0.111111, // square yards
+    acre: 2.2957e-5, // acres
+    ares: 0.0247105 // ares
+};
+
+// Function to update area based on the selected unit
+function updateArea(apartment) {
+    const areaElement = document.getElementById(`area-${apartment}`);
+    const unitSelect = document.getElementById(`unit-${apartment}`);
+    const selectedUnit = unitSelect.value;
+    let areaInFeet = 0;
+
+    // Define the initial area in sqft
+    if (apartment === '4bhk') {
+        areaInFeet = 1963.66; // 4 BHK initial value in sqft
+    } else if (apartment === '5bhk') {
+        areaInFeet = 3204.41; // 5 BHK initial value in sqft
+    }
+
+    // Convert the area based on the selected unit
+    let convertedArea = areaInFeet * conversionFactors[selectedUnit];
+
+    // Update the input field value
+    areaElement.value = convertedArea.toFixed(2);
+    // Update the unit text
+    document.getElementById(`unit-text-${apartment}`).textContent = selectedUnit;
+}
+
+document.getElementById("toggleButton").addEventListener("change", function() {
+    var currentImage = document.getElementById("floorPlanImage");
+  
+    if (this.checked) {
+      currentImage.src = "floor-plan-large.jpg";  // Path to the larger floor plan
+    } else {
+      currentImage.src = "floor-plan-small.jpg";  // Path to the smaller floor plan
+    }
+  });
+  
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const readMoreBtn = document.getElementById("read-more-btn");
+    const hiddenContent = document.getElementById("hidden-content");
+  
+    readMoreBtn.addEventListener("click", function () {
+      if (hiddenContent.style.display === "none") {
+        hiddenContent.style.display = "block";
+        readMoreBtn.textContent = "Read Less"; // Change button text
+      } else {
+        hiddenContent.style.display = "none";
+        readMoreBtn.textContent = "Read More"; // Revert button text
+      }
+    });
+  });
+  

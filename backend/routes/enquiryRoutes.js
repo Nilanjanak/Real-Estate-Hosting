@@ -1,6 +1,39 @@
+// const express = require("express");
+// const Enquiry = require("../models/Enquiry");
+
+// const router = express.Router();
+
+// // Route to handle Enquiry form submission
+// router.post("/submit", async (req, res) => {
+//   const { name, email, phone, message, product, quantity } = req.body;
+
+//   try {
+//     // Create a new Enquiry entry
+//     const newEnquiry = new Enquiry({ name, email, phone, message, product, quantity });
+
+//     // Save it to the database
+//     await newEnquiry.save();
+
+//     // Send a success response
+//     res
+//       .status(201)
+//       .json({ message: "Your enquiry has been registered successfully, we'll contact you shortly." });
+//   } catch (err) {
+//     console.error("Error saving Enquiry:", err);
+//     res
+//       .status(500)
+//       .json({
+//         message:
+//           "There was an error submitting your message. Please try again later.",
+//       });
+//   }
+// });
+
+// module.exports = router;
+
+
 const express = require("express");
 const nodemailer = require("nodemailer");
-const Contact = require("../models/Contact");
 
 const router = express.Router();
 
@@ -14,30 +47,30 @@ const transporter = nodemailer.createTransport({
 
 // Route to handle contact form submission
 router.post("/submit", async (req, res) => {
-  const { name, email, phone, message } = req.body;
-  const newContact = new Contact({ name, email, phone, message });
+  const { name, email, phone, address, product, quantity } = req.body;
 
   try {
-    
     // Mail options with variable sender email and fixed recipient email
     const mailOptions = {
       from: email, // Dynamic sender email
       to: "allenareworksheet@gmail.com", // Fixed recipient email
-      subject: "Query",
+      subject: "Enquiry",
       html: `
         <h2>Mail - ${email}</h2>
         <h3>Name - ${name}</h3>
         <h3>Contact No. - ${phone}</h3>
-        <p>${message}</p>
+        <h3>Product name - ${product}</h3>
+        <h3>Quantity - ${quantity}</h3>
+        <p>Address - ${address}</p>
       `,
     };
-
+    
     const mailOption = {
       from: "allenareworksheet@gmail.com", // Dynamic sender email
       to: email, // Fixed recipient email
-      subject: "Contact Us",
+      subject: "Enquiry",
       html: `
-        <h2>Thank You for Contacting Us. We'll be refering back to you.</h2>
+        <h1>Thank You for Contacting Us. We'll be refering back to you soon with all the details.</h1>
       `,
     };
 
@@ -47,9 +80,6 @@ router.post("/submit", async (req, res) => {
         transporter.sendMail(mailOption),
         newContact.save()
     ]);
-
-    // await transporter.sendMail(mailOptions);
-    // await newContact.save();
 
     // Respond with success message
     res
@@ -61,5 +91,5 @@ router.post("/submit", async (req, res) => {
   }
 });
 
-
 module.exports = router;
+
