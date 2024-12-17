@@ -1943,6 +1943,13 @@ article p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.property-image2 {
+    width: 200px; 
+    height: 150px; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
 .video-gallery {
     position: relative;
     display: block;
@@ -2058,6 +2065,12 @@ article p {
     color: #2c3e50;
 }
 
+.tag button {
+    background-color: inherit;
+    border: none;
+    margin: 0;
+}
+
 .tag-icon {
     margin-right: 8px;
     font-size: 18px;
@@ -2086,6 +2099,7 @@ article p {
 .facilities {
     background-color: #f7f1ff;
     color: #8e44ad;
+    cursor: pointer;
 }
 
 .view-number-btn {
@@ -2221,7 +2235,7 @@ select {
     height: 0;
   }
   
-  .slider {
+  .slider1 {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -2233,7 +2247,7 @@ select {
     border-radius: 50px;
   }
   
-  .slider:before {
+  .slider1:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -2245,11 +2259,11 @@ select {
     transition: 0.4s;
   }
   
-  input:checked + .slider {
+  input:checked + .slider1 {
     background-color: #4CAF50;
   }
   
-  input:checked + .slider:before {
+  input:checked + .slider1:before {
     transform: translateX(26px);
   }
   
@@ -2418,8 +2432,8 @@ select {
     margin-top: 10px;
   }
   
-  #download-brochure-btn {
-    padding: 10px 20px;
+  /* #download-brochure-btn {
+    padding: 5px 10px;
     font-size: 16px;
     background-color: #007BFF;
     color: white;
@@ -2427,7 +2441,7 @@ select {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+  } */
   
   #download-brochure-btn:hover {
     background-color: #0056b3;
@@ -2521,8 +2535,9 @@ select {
 
 #close-gallery-btn {
     float: right; 
-    background-color: red; 
-    color: white; 
+    background-color: white; 
+    color: gray; 
+    font-size: 2rem;
     border: none; 
     border-radius: 5px; 
     padding: 5px 10px; 
@@ -2530,10 +2545,10 @@ select {
 }
 
 .image-video-gallery {
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 10px; 
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    gap: 10px;
+    justify-items: center;
 }
 
 .video-gallery {
@@ -2541,3 +2556,434 @@ select {
     text-align: center; 
     margin-top: 20px;
 }
+
+ /* Section styling */
+ .property-section {
+    padding: 20px;
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.property-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.property-summary {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.show-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.show-more-btn:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+/* Popup styling */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow-y: auto;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.popup-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #e74c3c;
+}
+
+#showMoreBtn {
+    color: #1e8ee9;
+    cursor: pointer;
+}
+
+#showMoreBtn:hover {
+    color: #0056b3;
+}
+
+ /* Section Styling */
+ .construction-section {
+    /* max-width: 800px; */
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.construction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    color: blue;
+}
+
+.construction-header h2 {
+    font-size: 1.5rem;
+}
+
+.dropdown-arrow {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.construction-details {
+    display: none;
+    padding: 20px;
+    background: #fafafa;
+    border-top: 1px solid #ddd;
+}
+
+.construction-details p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #2575fc;
+}
+
+/* toggle section  */
+.toggle-section {
+    width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.toggle-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #bbb;
+    color: #fff;
+}
+
+.toggle-button {
+    width: 50%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    /* transition: background 0.3s ease; */
+}
+
+.toggle-button.active {
+    background: #fff;
+    color: #2575fc;
+    font-weight: bold;
+}
+
+.toggle-content {
+    padding: 20px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+/* brochure section  */
+.brochure-section {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.brochure-header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.brochure-viewer {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brochure-viewer canvas {
+    border-radius: 20px;
+}
+
+.pdf-page {
+    display: none;
+    width: 100%;
+    max-height: 100%;
+}
+
+.pdf-page.active {
+    display: block;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #eee;
+}
+
+.controls button {
+    background-color: #6a11cb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+/* property facility  */
+/* .property-tags {
+    width: 90%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.tag-button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+} */
+
+.tag-button:hover {
+    background: #6a11cb;
+}
+
+/* Popup Styling */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: #fff;
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+    color: #6a11cb;
+    text-align: center;
+}
+
+.facilities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.facility {
+    flex: 1 1 calc(25% - 10px); /* 4 items per row */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+/* Pastel Backgrounds */
+.facility:nth-child(1) { background-color: #FFDFD3; }
+.facility:nth-child(2) { background-color: #FFECB3; }
+.facility:nth-child(3) { background-color: #C8E6C9; }
+.facility:nth-child(4) { background-color: #B3E5FC; }
+.facility:nth-child(5) { background-color: #D1C4E9; }
+.facility:nth-child(6) { background-color: #F8BBD0; }
+.facility:nth-child(7) { background-color: #DCEDC8; }
+.facility:nth-child(8) { background-color: #FFF9C4; }
+.facility:nth-child(9) { background-color: #CFD8DC; }
+.facility:nth-child(10) { background-color: #FFE0B2; }
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: #ff5b5b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+.close-btn:hover {
+    background: #e63946;
+}
+
+@media (max-width: 600px) {
+    .facility {
+        flex: 1 1 calc(50% - 10px); /* 2 items per row for smaller screens */
+    }
+}
+
+/* faq section   */
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  
+  .faq-question {
+    background-color: beige;
+    color: #000;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #f8f9fc;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .faq-answer a {
+    color: #4e73df;
+    text-decoration: none;
+  }
+  
+  .faq-answer a:hover {
+    text-decoration: underline;
+  }
+
+  .price-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .price-head button {
+    padding: 10px 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  
