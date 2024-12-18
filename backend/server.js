@@ -26,6 +26,7 @@ app.use("/auth", authRoutes);
 app.use("/admin", adminRoutes);
 app.use("/password", passwordRoutes);
 app.use("/contact", contactRoutes);
+app.use("/enquiry", enquiryRoutes);
 
 const PORT = 5000;
 app.listen(PORT, () => {
@@ -38,7 +39,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // MongoDB Connection
-mongoose.connect("mongodb://localhost:27017/propertiesDB", {
+mongoose.connect("mongodb://127.0.0.1:27017/Real-Estate", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log("MongoDB connected"))
