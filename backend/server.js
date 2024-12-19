@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require('mongoose');
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const connectDB = require("./config/db");
@@ -38,14 +39,17 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
-// MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/Real-Estate", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log("MongoDB connected"))
-  .catch(err => console.error(err));
+// // MongoDB Connection
+// mongoose.connect("mongodb://127.0.0.1:27017/Real-Estate")
+//     .then(() => {
+//         console.log("Connected to MongoDB");
+//     })
+//     .catch((err) => {
+//         console.error("MongoDB connection error:", err);
+//     });
 
-// Routes
-app.use("/api", propertyRoutes);
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+// // Routes
+// app.use("/api", propertyRoutes);
+
+// app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Header -->
+    <my-header></my-header>
+    <div class="slide"></div>
 
     <div class="property-details">
         <section class="media-section">
@@ -24,10 +27,14 @@
                 </div> -->
 
                 <!-- Button to trigger gallery -->
-                <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/xy2jg8l_1724653282_514182695_optOrig.jpg" alt="Property Image" class="property-image">
+                <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/xy2jg8l_1724653282_514182695_optOrig.jpg" alt="Property Image" class="property-image zoomable">
                 <div class="property">
-                    <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/xy2jg8l_1724653282_514182695_optOrig.jpg" alt="Property Image" class="property-image1"> <br>
-                    <img id="show-gallery-btn" src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/xy2jg8l_1724653282_514182695_optOrig.jpg" alt="Property Image" class="property-image1">
+                    <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/p6dqoti_1724653281_514182669_optOrig.jpg" alt="Property Image" class="property-image1 zoomable"> <br>
+                    <div id="show-gallery-btn" class="image-overlay-container">
+                        <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/7puw6c0_1724653281_514182673_optOrig.jpg" alt="Property Image" class="property-image1 zoomable">
+                        <div class="overlay-text">+10</div>
+                    </div>
+                    <!-- <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/p6dqoti_1724653281_514182669_optOrig.jpg" alt="Property Image" class="property-image1 zoomable"> -->
                 </div>
                 <br>
                 <!-- <button id="show-gallery-btn" style="padding: 10px 20px; margin-top: 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">More</button> -->
@@ -45,20 +52,23 @@
                 
                 <div id="gallery-popup" class="gallery-popup">
                     <div class="gallery-content">
-                        <button id="close-gallery-btn">Close</button>
+                        <button id="close-gallery-btn">X</button>
                         <div class="image-video-gallery">
                             <!-- Property Images -->
-                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/xy2jg8l_1724653282_514182695_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
-                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/p6dqoti_1724653281_514182669_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
-                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/7puw6c0_1724653281_514182673_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
                             <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/ywubvla_1724653281_514182675_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
                             <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/l1v7zpt_1724653281_514182685_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
-                            <iframe class="property-image2 zoomable" id="video-frame" width="100%" height="130" src="https://www.youtube.com/embed/bru7Ho3N5Jo?list=TLGGMydsbwX-AoIxNzEyMjAyNA" title="VEDANT BELLA VISTA - PAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 5px; max-width: 100%; transition: transform 0.3s ease-in-out;"></iframe>
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/e0onh32_1724653636_514184647_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/5jolbw5_1724653282_514182691_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/jjarrgp_1724653282_514182693_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/bnxjgxx_1724653282_514182687_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/zvb6ehb_1724653635_514184637_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/dtuf9ry_1724653635_514184639_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/mnji9am_1724653635_514184641_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <!-- <iframe class="property-image2 zoomable" id="video-frame" width="100%" height="130" src="https://www.youtube.com/embed/bru7Ho3N5Jo?list=TLGGMydsbwX-AoIxNzEyMjAyNA" title="VEDANT BELLA VISTA - PAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 5px; max-width: 100%; transition: transform 0.3s ease-in-out;"></iframe> -->
                             
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -86,15 +96,11 @@
                     </div>
         </section>
 
-        <!-- <section class="property-tags">
-                    <button class="tag-button" id="viewFacilitiesBtn">View All Facilities</button>
-                </section> -->
-            
         <!-- Popup Section -->
         <div class="popup-overlay" id="popupOverlay1">
                     <div class="popup-content">
                         <button class="close-btn" id="closeBtn1">&times;</button>
-                        <h2>Top Facilities</h2>
+                        <!-- <h2>Top Facilities</h2> -->
                         <div class="facilities-grid">
                             <div class="facility">Swimming Pool</div>
                             <div class="facility">Gymnasium</div>
@@ -106,25 +112,51 @@
                             <div class="facility">Ample Parking Space</div>
                             <div class="facility">CCTV Surveillance</div>
                             <div class="facility">Power Backup</div>
+                            <div class="facility">Rainwater Harvesting</div>
+                            <div class="facility">Solar Power Panels</div>
+                            <div class="facility">Landscaped Garden</div>
+                            <div class="facility">Green Building Certification</div>
+                            <div class="facility">Energy Efficient Lighting</div>
+                            <div class="facility">Waste Management System</div>
+                            <div class="facility">Tree Plantation Drive</div>
+                            <div class="facility">Eco-friendly Materials</div>
+                            <div class="facility">Bicycle Parking</div>
+                            <div class="facility">Natural Ventilation</div>
+                            <div class="facility">Private Pool</div>
+                            <div class="facility">Jacuzzi</div>
+                            <div class="facility">Home Automation System</div>
+                            <div class="facility">Imported Marble Flooring</div>
+                            <div class="facility">High-end Fixtures</div>
+                            <div class="facility">Granite Countertops</div>
+                            <div class="facility">Walk-in Closets</div>
+                            <div class="facility">French Windows</div>
+                            <div class="facility">Private Garden</div>
+                            <div class="facility">Elevator Access</div>
                         </div>
                     </div>
         </div>
 
-        <section class="construction-section" id="constructionSection">
-                    <div class="construction-header" id="toggleHeader">
-                        <h2 id="statusText">Status: <span class="highlight">Under Construction</span></h2>
-                        <span class="dropdown-arrow" id="dropdownArrow">&#x25BC;</span>
-                    </div>
-                    <div class="construction-details" id="constructionDetails">
-                        <p><strong>Completion Date:</strong> May, 2026</p>
-                        <p><strong>Current Phase:</strong> Phase 2 - Tower Construction</p>
-                        <p>We are currently working on the <span class="highlight">2nd Phase</span> of the project, which includes structural work and finishing touches for the residential towers. Stay tuned for updates on upcoming phases.</p>
-                    </div>
+        <section class="brochure">
+            <div class="construction-section" id="constructionSection">
+                <div class="construction-header" id="toggleHeader">
+                    <h2 id="statusText">Status: <span class="highlight">Under Construction</span></h2>
+                    <span class="dropdown-arrow" id="dropdownArrow">&#x25BC;</span>
+                </div>
+                <div class="construction-details" id="constructionDetails">
+                    <p><strong>Completion Date:</strong> May, 2026</p>
+                    <p><strong>Current Phase:</strong> Phase 1 - Tower Construction</p>
+                    <p>We are currently working on the <span class="highlight">1st Phase</span> of the project, which includes structural work and finishing touches for the residential towers. Stay tuned for updates on upcoming phases.</p>
+                </div>
+            </div>  
+            <button id="download-brochure-btn">Download Brochure</button>
         </section>
             
         
         <section class="description-section">
-                    <h2 class="property-heading">Vedant Bellavista</h2>
+            <div class="name">
+                <img src="https://imagecdn.99acres.com/media1/25910/19/518219147O-1726294717722.jpg" alt="Vedant Group Logo" class="footer-logo">
+                <h2 class="property-heading">Vedant Bellavista</h2>
+            </div>
                     <p class="property-description">
                         Vedant Bellavista is a premium residential complex located in Pal, Surat. The property offers
                         a variety of 4 BHK and 5 BHK apartments with spacious layouts, top-notch amenities, and modern
@@ -138,201 +170,69 @@
 
         <!-- Price Section with Size, Price, and Carpet Area -->
         <section class="price-section">
-                    <div class="price-head">
-                        <h3 class="price-heading">Available Apartments & Prices</h3>
-                        <button id="download-brochure-btn">Download Brochure</button>
-                    </div>
-                    <div class="price-list">
-                        <div class="price-item">
-                            <div class="price-box">
-                                <div class="box-title">Size</div>
-                                <div class="box-details">4 BHK</div>
-                            </div>
-                            <div class="price-box">
-                                <div class="box-title">Price</div>
-                                <div class="box-details">₹ 1.8 Cr</div>
-                            </div>
-                            <div class="price-box">
-                                <div class="box-title">Carpet Area</div>
-                                <div class="box-details">
-                                    <input id="area-4bhk" class="area-input" type="number" value="1963.66" readonly /> 
-                                    <span id="unit-text-4bhk">sq.ft.</span>
-                                    <select id="unit-4bhk" onchange="updateArea('4bhk')">
-                                        <option value="sqft">sq.ft.</option>
-                                        <option value="sqm">sq.m</option>
-                                        <option value="sqyd">sq.yd</option>
-                                        <option value="acre">acre</option>
-                                        <option value="ares">ares</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="price-item">
-                            <div class="price-box">
-                                <div class="box-title">Size</div>
-                                <div class="box-details">5 BHK</div>
-                            </div>
-                            <div class="price-box">
-                                <div class="box-title">Price</div>
-                                <div class="box-details">₹ 3.42 Cr</div>
-                            </div>
-                            <div class="price-box">
-                                <div class="box-title">Carpet Area</div>
-                                <div class="box-details">
-                                    <input id="area-5bhk" class="area-input" type="number" value="3204.41" readonly />
-                                    <span id="unit-text-5bhk">sq.ft.</span>
-                                    <select id="unit-5bhk" onchange="updateArea('5bhk')">
-                                        <option value="sqft">sq.ft.</option>
-                                        <option value="sqm">sq.m</option>
-                                        <option value="sqyd">sq.yd</option>
-                                        <option value="acre">acre</option>
-                                        <option value="ares">ares</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        </section>
-
-        <!-- <section id="brochure-section" style="text-align: center; margin-top: 20px;">
-            <button id="download-brochure-btn">Download Brochure</button>
-          </section> -->
-
-        <section class="toggle-section">
-                    <!-- Toggle Header -->
-                    <div class="toggle-header">
-                        <div class="toggle-button active" id="floorPlanBtn">4BHK</div>
-                        <div class="toggle-button" id="sizeBtn">5BHK</div>
-                    </div>
-                    
-                    <!-- Toggle Content -->
-                    <div class="toggle-content">
-                        <div class="content active" id="floorPlanContent">
-                            <!-- <h3>Floor Plan</h3> -->
-                            <!-- <p>Here is the detailed floor plan of the property:</p> -->
-                            <img src="https://projectcdn.99acres.com/project_data/fc5b99/block1_120084/3D/57500_B1_1F1_3D.jpg" alt="Floor Plan" style="width: 100%; height: auto; border-radius: 8px;">
-                        </div>
+            <div>
+                <div class="price-head">
+                    <h3 class="price-heading">Available Apartments & Prices</h3>
+                </div>
+                <div class="price-list">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>4 BHK</th>
+                                <th>5 BHK</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="box-title">Size</td>
+                                <td class="box-details">4 BHK</td>
+                                <td class="box-details">5 BHK</td>
+                            </tr>
+                            <tr>
+                                <td class="box-title">Price</td>
+                                <td class="box-details">₹ 1.8 Cr</td>
+                                <td class="box-details">₹ 3.42 Cr</td>
+                            </tr>
+                            <tr>
+                                <td class="box-title">Carpet Area</td>
+                                <td class="box-details">1963.66 sq.ft.</td>
+                                <td class="box-details">3204.41 sq.ft</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+                
+                
+            </div>
+            <div class="toggle-section">
+                <!-- Toggle Header -->
+                <div class="toggle-header">
+                    <div class="toggle-button active" id="floorPlanBtn">4BHK</div>
+                    <div class="toggle-button" id="sizeBtn">5BHK</div>
+                </div>
                         
-                        <div class="content" id="sizeContent">
-                            <img src="https://projectcdn.99acres.com/project_data/fc5b99/block1_120084/3D/57500_B1_1F2_3D.jpg" alt="Floor Plan" style="width: 100%; height: auto; border-radius: 8px;">
-                        </div>
+                <!-- Toggle Content -->
+                <div class="toggle-content">
+                    <div class="content active" id="floorPlanContent">
+                        <!-- <h3>Floor Plan</h3> -->
+                        <!-- <p>Here is the detailed floor plan of the property:</p> -->
+                        <img class=" zoomable" src="https://projectcdn.99acres.com/project_data/fc5b99/block1_120084/3D/57500_B1_1F1_3D.jpg" alt="Floor Plan" style="width: 100%; height: auto; border-radius: 8px;">
                     </div>
-        </section>
-
-        <section id="top-facilities">
-            <h2>Top Facilities</h2>
-            <div class="facilities-grid">
-              <div class="facility" id="lounge">
-                <i class="fas fa-couch"></i>
-                <p>Lounge</p>
-              </div>
-              <div class="facility" id="sauna">
-                <i class="fas fa-fire"></i>
-                <p>Sauna</p>
-              </div>
-              <div class="facility" id="steam-room">
-                <i class="fas fa-shower"></i>
-                <p>Steam Room</p>
-              </div>
-              <div class="facility" id="banquet-hall">
-                <i class="fas fa-utensils"></i>
-                <p>Banquet Hall</p>
-              </div>
-              <div class="facility" id="fountain">
-                <i class="fas fa-water"></i>
-                <p>Fountain</p>
-              </div>
-              <div class="facility" id="library">
-                <i class="fas fa-book"></i>
-                <p>Library</p>
-              </div>
-              <div class="facility" id="multipurpose-court">
-                <i class="fas fa-basketball-ball"></i>
-                <p>Multipurpose Court</p>
-              </div>
-              <div class="facility" id="cricket-pitch">
-                <i class="fas fa-baseball-ball"></i>
-                <p>Cricket Pitch</p>
-              </div>
+                            
+                    <div class="content" id="sizeContent">
+                        <img class=" zoomable" src="https://projectcdn.99acres.com/project_data/fc5b99/block1_120084/3D/57500_B1_1F2_3D.jpg" alt="Floor Plan" style="width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                </div>
             </div>
         </section>
-
-          <!-- <section id="more-details">
-            <h2>More Details</h2>
-            <p>
-              RCC framed strategically constructed structure keeping in mind the best of architecture 
-              and specifications both from inside as well as outside.
-            </p>
-            <button id="read-more-btn">Read More</button>
-            <div id="hidden-content">
-              <h3>Property Overview</h3>
-              <ul>
-                <li><strong>Towers:</strong> 4</li>
-                <li><strong>Floors:</strong> 12</li>
-                <li><strong>Units:</strong> 88</li>
-                <li><strong>Total Project Area:</strong> 1.7151585 acres (6.9K sq.m.)</li>
-              </ul>
-              <p>
-                Check out Vedant Bellavista in PAL, one of the upcoming under-construction housing societies in Surat. There are apartments for sale in Vedant Bellavista PAL, Surat. This society will have all basic facilities and amenities to suit homebuyer’s needs and requirements. Brought to you by Hare Krishna Group, Vedant Bellavista is scheduled for possession in May, 2026.<br><br>
-            
-                Being a RERA-registered society, the project details and other important information is also available on the state RERA portal. The RERA registration number of this project is PR/GJ/SURAT/CHORYASI/SuratMunicipalCorporation/RAA13712/250624/310329.<br><br>
-            
-                Hare Krishna Group is one of the known real estate brands in Surat. The builder has delivered 1 project so far. There is 1 project of this builder, which is currently under-construction.<br><br>
-            
-                Here’s everything you need to know about the must-know features of this housing society along with Vedant Bellavista Photos, Floor Plans, Payment Plans, Brochure download procedure and other exciting facts about your future home:<br><br>
-            
-                <strong>Features & Amenities</strong><br>
-                - The project is spread over an area of 1.72 acres.<br>
-                - There are around 88 units on offer.<br>
-                - Vedant Bellavista PAL housing society has 4 towers with 12 floors.<br>
-                - Vedant Bellavista Surat has some great amenities to offer such as Lounge, Sauna and Steam Room.<br>
-                - Sarjan Maternity and Gynec Hospital is a popular landmark in PAL, Surat.<br>
-                - Property prices in locality has changed -1.1% in last quarter.<br><br>
-            
-                <strong>Vedant Bellavista Floor Plans and Price List</strong><br>
-                - Vedant Bellavista 4BHK Apartment: 1,963 sq.ft. (Price on Request onwards)<br>
-                - Vedant Bellavista 5BHK Apartment: 3,204 sq.ft. (Price on Request onwards)<br><br>
-            
-                <strong>How to get Vedant Bellavista Brochure?</strong><br>
-                View and download Vedant Bellavista Official Brochure to take a comprehensive look at this upcoming housing society. It is a detailed prospectus about the society’s offerings, amenities, features, payment plans and a lot more. Click the ‘download’ icon on the main page to get the brochure in one click.<br><br>
-            
-                <strong>Where to find Vedant Bellavista Photos & Videos?</strong><br>
-                View interiors and exterior images of residential properties for sale in Vedant Bellavista PAL to check out 5 picture(s) of Demo Flat, 5 picture(s) of outdoors, 12 picture(s) of facilities in Vedant Bellavista housing society.<br><br>
-            
-                <strong>What is Vedant Bellavista Address?</strong><br>
-                Adajan, Surat.<br>
-                Get directions to reach this location.<br><br>
-            
-                <strong>How is PAL, Surat for buying a home?</strong><br>
-                PAL is a luxury locality to buy an apartment, as compared to other areas in the surrounding areas. This locality ranks #3 in Top 100 in Surat. Some of the popular features of PAL, Surat are:<br>
-                - Close to Employment Hubs<br>
-                - Near Planned Metro Station<br>
-                - Proximity to Airport<br>
-                - Home to PAL Lake<br><br>
-            
-                The existing residents of PAL gave it an average rating of 4.3, out of 5. Most of the reviews mention that this locality has:<br>
-                - Good Public Transport<br>
-                - Easy Cab/Auto Availability<br>
-                - Good Hospitals are nearby<br>
-                - Safe at Night<br>
-                - No Power Cuts<br>
-                - Good Schools are nearby<br><br>
-            
-                The ratings are based on 29 total reviews.<br><br>
-            
-                <strong>How is PAL for investment?</strong><br>
-                PAL presents a reasonable opportunity for those considering property investments, as it offers a luxury investment option compared to nearby areas. There are expected infrastructural developments in nearby areas, which may impact real estate prices in this specific locality as well. Moreover, Vedant Bellavista is an under-construction project where you can invest in the most preferred property options at a lesser cost and get higher returns, with easy payment plans.<br><br>
-            
-                <strong>How is Hare Krishna Group track record?</strong><br>
-                Hare Krishna Group stands out with a proven track record in the industry. Over the 16 years, it has made a mark in the real estate industry. Hare Krishna Group currently has 2 ongoing projects in its portfolio.
-              </p>
-            </div>
-          </section> -->
 
           <!-- Property Section -->
             <section class="property-section">
                 <h1 class="property-title">More Details</h1>
-                <p class="property-summary">This spacious 3-bedroom house in the city center offers comfort and style... <span id="showMoreBtn">Show More</span></p>
+                <p class="property-summary">This spacious 3-bedroom house in the city center offers comfort and style. There are apartments for sale in Vedant Bellavista PAL, Surat. This society will have all basic facilities and amenities to suit homebuyer’s needs and requirements. Brought to you by Hare Krishna Group, Vedant Bellavista is scheduled for possession in May, 2026... <span id="showMoreBtn">Show More</span></p>
                 <!-- <button class="show-more-btn" id="showMoreBtn">Show More</button> -->
             </section>
 
@@ -379,7 +279,7 @@
                         - Proximity to Airport<br>
                         - Home to PAL Lake<br><br>
                     
-                        The existing residents of PAL gave it an average rating of 4.3, out of 5. Most of the reviews mention that this locality has:<br>
+                        <!-- The existing residents of PAL gave it an average rating of 4.3, out of 5. Most of the reviews mention that this locality has:<br>
                         - Good Public Transport<br>
                         - Easy Cab/Auto Availability<br>
                         - Good Hospitals are nearby<br>
@@ -387,7 +287,7 @@
                         - No Power Cuts<br>
                         - Good Schools are nearby<br><br>
                     
-                        The ratings are based on 29 total reviews.<br><br>
+                        The ratings are based on 29 total reviews.<br><br> -->
                     
                         <strong>How is PAL for investment?</strong><br>
                         PAL presents a reasonable opportunity for those considering property investments, as it offers a luxury investment option compared to nearby areas. There are expected infrastructural developments in nearby areas, which may impact real estate prices in this specific locality as well. Moreover, Vedant Bellavista is an under-construction project where you can invest in the most preferred property options at a lesser cost and get higher returns, with easy payment plans.<br><br>
@@ -395,22 +295,134 @@
                         <strong>How is Hare Krishna Group track record?</strong><br>
                         Hare Krishna Group stands out with a proven track record in the industry. Over the 16 years, it has made a mark in the real estate industry. Hare Krishna Group currently has 2 ongoing projects in its portfolio.
                     </p>
+                    <h2>Specifications</h2>
+                    <table class="project-details-table">
+                        <thead>
+                            <tr>
+                                <th class="table-header">Overview</th>
+                                <th class="table-header">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-row-title">Towers</td>
+                                <td class="table-row-value">4</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Floors</td>
+                                <td class="table-row-value">12</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Units</td>
+                                <td class="table-row-value">88</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Total Project Area</td>
+                                <td class="table-row-value">1.7151585 acres (6.9K sq.m.)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
                 </div>
             </div>
 
-            <!-- brochure section  -->
-            <section class="brochure-section">
-                <div class="brochure-header">Brochure Viewer</div>
-                <div class="brochure-viewer">
-                    <!-- PDF Page Viewer -->
-                    <canvas id="pdfCanvas"></canvas>
+            <div class="body-wrapper">
+                <!-- brochure section  -->
+                <div class="brochure-section">
+                    <div class="brochure-header">Brochure Viewer</div>
+                    <div class="brochure-viewer">
+                        <!-- PDF Page Viewer -->
+                        <canvas id="pdfCanvas"></canvas>
+                    </div>
+                    <div class="controls">
+                        <button id="prevBtn" disabled>Previous</button>
+                        <span id="pageIndicator">Page 1 of 3</span>
+                        <button id="nextBtn">Next</button>
+                    </div>
                 </div>
-                <div class="controls">
-                    <button id="prevBtn" disabled>Previous</button>
-                    <span id="pageIndicator">Page 1 of 3</span>
-                    <button id="nextBtn">Next</button>
+                <div class="card-container">
+                    <h2 class="card-title">Why you should consider Vedant Bellavista?</h2>
+                    <ul class="card-list">
+                        <li class="card-list-item">25 plus amenities</li>
+                        <li class="card-list-item">20000 sqft landscape garden</li>
+                        <li class="card-list-item">Well ventilated buildings</li>
+                    </ul>
+                    <a class="view-more-link" onclick="openPopup()">View 1 more →</a>
+                    <!-- Popup Modal -->
+                    <div id="popup" class="popup">
+                        <div class="popup-content1">
+                            <span class="close-btn" onclick="closePopup()">&times;</span>
+                            <h2>Why you should consider Vedant Bellavista?</h2>
+                            <ul>
+                                <li>Campus only for 100 exclusive families</li>
+                                <li>30 Feet wide deck balcony</li>
+                                <li>Roof top solar panel and EV charging points</li>
+                                <li>Two car parking for each flat</li>
+                                <li>Lavish entrance foyer with elegant design</li>
+                                <li>State-of-the-art 2 high-speed automatic elevators</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-container">
+                        <div>
+                            <p style="margin: 0; font-weight: normal;">DEVELOPED BY</p>
+                            <strong>Vedant Group</strong>
+                        </div>
+                        <img src="https://imagecdn.99acres.com/media1/25910/19/518219147O-1726294717722.jpg" alt="Vedant Group Logo" class="footer-logo">
+                    </div>
+                    <a class="contact-builder-btn" onclick="openContactPopup()">Contact Builder</a>
+                    <!-- Contact Form Popup -->
+                    <div id="contact-popup" class="popup">
+                        <div class="popup-content2">
+                        <span class="close-btn" onclick="closeContactPopup()">&times;</span>
+                        <h2>Contact Builder</h2>
+                        <form id="contact-form">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+                    
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+                    
+                            <label for="message">Your Message:</label><br>
+                            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+
+            <!-- <div class="review-section">
+                <div class="flexreview">
+                    <h3>Ratings</h3>
+                    <p><strong>Average Rating</strong></p>
+                    <div class="rating">
+                        <span class="stars">
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </span>
+                        <span class="rating-text"><span class="strong-rating">4.3 </span>/ 5</span>
+                    </div>
+                </div>
+                <div class="review-features">
+                    <p><strong>Most mentioned features:</strong></p>
+                    <ul>
+                        <li>Good Public Transport</li>
+                        <li>Easy Cab/Auto Availability</li>
+                        <li>Good Hospitals are nearby</li>
+                        <li>Safe at Night</li>
+                        <li>No Power Cuts</li>
+                        <li>Good Schools are nearby</li>
+                    </ul>
+                </div> 
+            </div> -->
+            
             
             <section class="faq-section">
                 <div class="faq-container">
@@ -509,6 +521,8 @@
             </section>
 
     </div>
+
+    <my-footer></my-footer>
 
     <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
@@ -830,6 +844,49 @@
                 updateButtons();
             }
         });
+
+        document.querySelectorAll('.thumbnail').forEach((thumbnail) => {
+            thumbnail.addEventListener('click', (e) => {
+                const fullImageUrl = e.target.getAttribute('data-full-image');
+                const lightboxImage = document.getElementById('lightbox-image');
+                lightboxImage.src = fullImageUrl; // Update the zoomed image
+            });
+        });
+
+        // Open the popup
+        function openPopup() {
+        document.getElementById("popup").style.display = "block";
+        }
+
+        // Close the popup
+        function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        }
+
+        // Close the popup when clicking outside of the content
+        window.onclick = function(event) {
+        if (event.target === document.getElementById("popup")) {
+            closePopup();
+        }
+        }
+
+        // Open the Contact Builder popup
+        function openContactPopup() {
+        document.getElementById("contact-popup").style.display = "block";
+        }
+
+        // Close the Contact Builder popup
+        function closeContactPopup() {
+        document.getElementById("contact-popup").style.display = "none";
+        }
+
+        // Close the popup when clicking outside of the content
+        window.onclick = function(event) {
+        if (event.target === document.getElementById("contact-popup")) {
+            closeContactPopup();
+        }
+        }
+
 
         </script>
       
