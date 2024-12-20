@@ -245,6 +245,7 @@ main {
     text-decoration: none; /* Remove underline from links */
     color: inherit; /* Keep text color same */
     transition: transform 0.2s ease; /* Add a hover effect */
+    /* width: 250px; */
 }
 
 .bouquet-card img {
@@ -253,6 +254,11 @@ main {
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* .bouquet-card button {
+    position: relative;
+    margin-bottom: 10px;
+} */
 
 .bouquet-card h3 {
     font-size: 1.2rem;
@@ -286,6 +292,8 @@ main {
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.3s ease;
+    /* position: relative;
+    margin-bottom: 10px; */
 }
 
 .add-to-cart-btn:hover {
@@ -711,9 +719,9 @@ footer {
 }
 
 /* Product page */
-.product-page-display img {
+/* .product-page-display img {
     width: 330px;
-}
+} */
 
 .product-page-display h2 {
     font-size: 1.2rem;
@@ -2711,8 +2719,8 @@ select {
 
 .popup-content button {
     position: fixed;
-    top: 50px;
-    right: 360px;
+    top: 20px;
+    right: 20px;
 }
 
 .popup-content {
@@ -3194,6 +3202,11 @@ select {
     font-size: 1.2rem;
 }
 
+.box-details span {
+    font-size: 0.8rem;
+    color: grey;
+}
+
 .area-input {
     width: 100px;
     margin-right: 5px;
@@ -3279,7 +3292,7 @@ select {
 
 /* Body styling */
 .body-wrapper {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3291,7 +3304,8 @@ select {
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 100%;
-    max-width: 320px;
+    max-width: 450px;
+    max-height: 450px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -3390,10 +3404,10 @@ select {
 }
 
 .name {
-    max-width: 380px;
+    max-width: 400px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 /* Styles for modal popup */
@@ -3452,17 +3466,34 @@ select {
     margin: 15% auto; /* Centered */
     padding: 20px;
     border: 1px solid #888;
+    border-radius: 10px;
     width: 80%; /* Could be more or less, depending on screen size */
     max-width: 500px;
   }
   
-  /* Close button */
-  .close-btn {
+  .popup-content1 span {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    top: 300px;
+    right: 700px;
   }
+
+  .popup-content1 span:hover, span:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Close button */
+  /* .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  } */
   
   .close-btn:hover,
   .close-btn:focus {
@@ -3519,10 +3550,10 @@ select {
   }
   
   /* Contact form styles */
-  form {
+  /* form {
     display: flex;
     flex-direction: column;
-  }
+  } */
   
   input, textarea {
     padding: 10px;
