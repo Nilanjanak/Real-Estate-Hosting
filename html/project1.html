@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Bellavista</title>
+    <!-- Favicon (website title icon) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Optionally, include multiple sizes for different devices -->
+    <link rel="icon" href="../images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+     <link rel="icon" href="images/favicon-192x192.png" sizes="192x192" type="image/png">
+     <link rel="icon" href="images/favicon-512x512.png" sizes="512x512" type="image/png">
+     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+     <!-- fontawesome  -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- css  -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <my-header></my-header>
+    <div class="slide"></div>
+
+    <div class="property-details">
+        <section class="media-section">
+            <div class="media-container">
+                <!-- <div class="image-video-gallery">
+                    <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/xy2jg8l_1724653282_514182695_optOrig.jpg" alt="Property Image" class="property-image">
+                    <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/xy2jg8l_1724653282_514182695_optOrig.jpg" alt="Property Image" class="property-image">
+                    <div class="video-gallery">
+                        <video autoplay loop muted class="property-video" controlsList="nodownload nofullscreen noplaybackrate">
+                            <source src="videos/property_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div> -->
+
+                <!-- Button to trigger gallery -->
+                <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/xy2jg8l_1724653282_514182695_optOrig.jpg" alt="Property Image" class="property-image zoomable">
+                <div class="property">
+                    <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/p6dqoti_1724653281_514182669_optOrig.jpg" alt="Property Image" class="property-image1 zoomable"> <br>
+                    <div id="show-gallery-btn" class="image-overlay-container">
+                        <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/7puw6c0_1724653281_514182673_optOrig.jpg" alt="Property Image" class="property-image1 zoomable">
+                        <div class="overlay-text">+10</div>
+                    </div>
+                    <!-- <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/p6dqoti_1724653281_514182669_optOrig.jpg" alt="Property Image" class="property-image1 zoomable"> -->
+                </div>
+                <br>
+                <!-- <button id="show-gallery-btn" style="padding: 10px 20px; margin-top: 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">More</button> -->
+
+                <!-- Hidden Gallery -->
+
+                <!-- Lightbox Popup for Zoom with Navigation -->
+                <!-- Lightbox Popup for Zoom with Navigation -->
+                <div id="lightbox" class="lightbox">
+                    <img id="lightbox-image" src="" alt="Zoomed Image">
+                    <button id="prev-lightbox-btn">&#10094;</button>
+                    <button id="next-lightbox-btn">&#10095;</button>
+                    <button id="close-lightbox-btn">Close</button>
+                </div>
+                
+                <div id="gallery-popup" class="gallery-popup">
+                    <div class="gallery-content">
+                        <button id="close-gallery-btn">X</button>
+                        <div class="image-video-gallery">
+                            <!-- Property Images -->
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/ywubvla_1724653281_514182675_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/l1v7zpt_1724653281_514182685_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/e0onh32_1724653636_514184647_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/5jolbw5_1724653282_514182691_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/jjarrgp_1724653282_514182693_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/bnxjgxx_1724653282_514182687_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/zvb6ehb_1724653635_514184637_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/dtuf9ry_1724653635_514184639_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/mnji9am_1724653635_514184641_optOrig.jpg" alt="Property Image" class="property-image2 zoomable">
+                            <!-- <iframe class="property-image2 zoomable" id="video-frame" width="100%" height="130" src="https://www.youtube.com/embed/bru7Ho3N5Jo?list=TLGGMydsbwX-AoIxNzEyMjAyNA" title="VEDANT BELLA VISTA - PAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 5px; max-width: 100%; transition: transform 0.3s ease-in-out;"></iframe> -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section Between Name and Description -->
+        <section class="property-tags">
+                    <div class="tags-container">
+                        <div class="tags-container-inner">
+                            <div class="tag rera">
+                                <span class="tag-icon">✔</span> RERA
+                            </div>
+                            <div class="tag no-brokerage">
+                                <span class="tag-icon">🏠</span> No Brokerage
+                            </div>
+                            <div class="tag offer">
+                                <span class="tag-icon">🎉</span> 1 OFFER
+                            </div>
+                            <div class="tag floor-plans">
+                                <span class="tag-icon">🗺</span> 3D Floor Plans Available
+                            </div>
+                            <div class="tag facilities" id="viewFacilitiesBtn">
+                                <span class="tag-icon">🌟 +20 Top Facilities</span> 
+                            </div>
+                        </div>
+                        <a href="contact.html" class="view-number-btn">Contact Us</a href="contact.html">
+                    </div>
+        </section>
+
+        <!-- Popup Section -->
+        <div class="popup-overlay" id="popupOverlay1">
+                    <div class="popup-content">
+                        <button class="close-btn" id="closeBtn1">&times;</button>
+                        <!-- <h2>Top Facilities</h2> -->
+                        <div class="facilities-grid">
+                            <div class="facility">
+                                <i class="fas fa-swimming-pool"></i>
+                                <h3>Swimming Pool</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <h3>Gymnasium</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-chair"></i>
+                                <h3>Sauna & Steam Room</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-house"></i>
+                                <h3>Clubhouse</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-child"></i>
+                                <h3>Children's Play Area</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fas fa-running"></i>
+                                <h3>Jogging Track</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-shield"></i>
+                                <h3>24x7 Security</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fas fa-parking"></i>
+                                <h3>Ample Parking Space</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa fa-video-camera"></i>
+                                <h3>CCTV Surveillance</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-plug"></i>
+                                <h3>Power Backup</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-solar-panel"></i>
+                                <h3>Solar Power Panels</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-leaf"></i>
+                                <h3>Energy Efficient Lighting</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-seedling"></i>
+                                <h3>Eco-friendly Materials</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-bicycle"></i>
+                                <h3>Bicycle Parking</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-blender-phone"></i>
+                                <h3>Home Automation System</h3>
+                            </div>
+                            <div class="facility">
+                                <i class="fa-solid fa-elevator"></i>
+                                <h3>Elevator Access</h3>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+        <section class="brochure">
+            <div class="construction-section" id="constructionSection">
+                <div class="construction-header" id="toggleHeader">
+                    <h2 id="statusText">Status: <span class="highlight">Under Construction</span></h2>
+                    <span class="dropdown-arrow" id="dropdownArrow">&#x25BC;</span>
+                </div>
+                <div class="construction-details" id="constructionDetails">
+                    <p><strong>Completion Date:</strong> May, 2026</p>
+                    <p><strong>Current Phase:</strong> Phase 1 - Tower Construction</p>
+                    <p>We are currently working on the <span class="highlight">1st Phase</span> of the project, which includes structural work and finishing touches for the residential towers. Stay tuned for updates on upcoming phases.</p>
+                </div>
+            </div>  
+            <button id="download-brochure-btn">Download Brochure</button>
+        </section>
+            
+        
+        <section class="description-section">
+            <div class="name">
+                <img src="https://imagecdn.99acres.com/media1/25910/19/518219147O-1726294717722.jpg" alt="Vedant Group Logo" class="footer-logo">
+                <h2 class="property-heading">Vedant Bellavista</h2>
+            </div>
+                    <p class="property-description">
+                        Vedant Bellavista is a premium residential complex located in Pal, Surat. The property offers
+                        a variety of 4 BHK and 5 BHK apartments with spacious layouts, top-notch amenities, and modern
+                        architecture. The development promises a luxurious living experience with a 20,000 sqft landscape
+                        garden and well-ventilated buildings, ensuring comfort and style. Expected to complete by May 2026,
+                        it’s the perfect place for families seeking a blend of modern living and natural beauty.
+                    </p>
+        </section>
+
+        <!-- Done -->
+
+        <!-- Price Section with Size, Price, and Carpet Area -->
+        <section class="price-section">
+            <div>
+                <div class="price-head">
+                    <h3 class="price-heading">Available Apartments & Prices</h3>
+                </div>
+                <div class="price-list">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>4 BHK</th>
+                                <th>5 BHK</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="box-title">Size</td>
+                                <td class="box-details">4 BHK</td>
+                                <td class="box-details">5 BHK</td>
+                            </tr>
+                            <tr>
+                                <td class="box-title">Price</td>
+                                <td class="box-details">₹ 1.8 Cr</td>
+                                <td class="box-details">₹ 3.42 Cr</td>
+                            </tr>
+                            <tr>
+                                <td class="box-title">Carpet Area</td>
+                                <td class="box-details">1963.66 sq.ft.</td>
+                                <td class="box-details">3204.41 sq.ft</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+                
+                
+            </div>
+            <div class="toggle-section">
+                <!-- Toggle Header -->
+                <div class="toggle-header">
+                    <div class="toggle-button active" id="floorPlanBtn">4BHK</div>
+                    <div class="toggle-button" id="sizeBtn">5BHK</div>
+                </div>
+                        
+                <!-- Toggle Content -->
+                <div class="toggle-content">
+                    <div class="content active" id="floorPlanContent">
+                        <!-- <h3>Floor Plan</h3> -->
+                        <!-- <p>Here is the detailed floor plan of the property:</p> -->
+                        <img class=" zoomable" src="https://projectcdn.99acres.com/project_data/fc5b99/block1_120084/3D/57500_B1_1F1_3D.jpg" alt="Floor Plan" style="width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                            
+                    <div class="content" id="sizeContent">
+                        <img class=" zoomable" src="https://projectcdn.99acres.com/project_data/fc5b99/block1_120084/3D/57500_B1_1F2_3D.jpg" alt="Floor Plan" style="width: 100%; height: auto; border-radius: 8px;">
+                        <img class=" zoomable" src="../images/5bhk.jpg.png" alt="Floor Plan" style="width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <!-- Property Section -->
+            <section class="property-section">
+                <h1 class="property-title">More Details</h1>
+                <p class="property-summary">This spacious 3-bedroom house in the city center offers comfort and style. There are apartments for sale in Vedant Bellavista PAL, Surat. This society will have all basic facilities and amenities to suit homebuyer’s needs and requirements. Brought to you by Hare Krishna Group, Vedant Bellavista is scheduled for possession in May, 2026... <span id="showMoreBtn">Show More</span></p>
+                <!-- <button class="show-more-btn" id="showMoreBtn">Show More</button> -->
+            </section>
+
+            <!-- Popup Overlay -->
+            <div class="popup-overlay" id="popupOverlay">
+                <div class="popup-content">
+                    <button class="close-btn" id="closeBtn">&times;</button>
+                    <h2>Property Details</h2>
+                    <p>
+                        Check out Vedant Bellavista in PAL, one of the upcoming under-construction housing societies in Surat. There are apartments for sale in Vedant Bellavista PAL, Surat. This society will have all basic facilities and amenities to suit homebuyer’s needs and requirements. Brought to you by Hare Krishna Group, Vedant Bellavista is scheduled for possession in May, 2026.<br><br>
+                    
+                        Being a RERA-registered society, the project details and other important information is also available on the state RERA portal. The RERA registration number of this project is PR/GJ/SURAT/CHORYASI/SuratMunicipalCorporation/RAA13712/250624/310329.<br><br>
+                    
+                        Hare Krishna Group is one of the known real estate brands in Surat. The builder has delivered 1 project so far. There is 1 project of this builder, which is currently under-construction.<br><br>
+                    
+                        Here’s everything you need to know about the must-know features of this housing society along with Vedant Bellavista Photos, Floor Plans, Payment Plans, Brochure download procedure and other exciting facts about your future home:<br><br>
+                    
+                        <strong>Features & Amenities</strong><br>
+                        - The project is spread over an area of 1.72 acres.<br>
+                        - There are around 88 units on offer.<br>
+                        - Vedant Bellavista PAL housing society has 4 towers with 12 floors.<br>
+                        - Vedant Bellavista Surat has some great amenities to offer such as Lounge, Sauna and Steam Room.<br>
+                        - Sarjan Maternity and Gynec Hospital is a popular landmark in PAL, Surat.<br>
+                        - Property prices in locality has changed -1.1% in last quarter.<br><br>
+                    
+                        <strong>Vedant Bellavista Floor Plans and Price List</strong><br>
+                        - Vedant Bellavista 4BHK Apartment: 1,963 sq.ft. (Price on Request onwards)<br>
+                        - Vedant Bellavista 5BHK Apartment: 3,204 sq.ft. (Price on Request onwards)<br><br>
+                    
+                        <strong>How to get Vedant Bellavista Brochure?</strong><br>
+                        View and download Vedant Bellavista Official Brochure to take a comprehensive look at this upcoming housing society. It is a detailed prospectus about the society’s offerings, amenities, features, payment plans and a lot more. Click the ‘download’ icon on the main page to get the brochure in one click.<br><br>
+                    
+                        <strong>Where to find Vedant Bellavista Photos & Videos?</strong><br>
+                        View interiors and exterior images of residential properties for sale in Vedant Bellavista PAL to check out 5 picture(s) of Demo Flat, 5 picture(s) of outdoors, 12 picture(s) of facilities in Vedant Bellavista housing society.<br><br>
+                    
+                        <strong>What is Vedant Bellavista Address?</strong><br>
+                        Adajan, Surat.<br>
+                        Get directions to reach this location.<br><br>
+                    
+                        <strong>How is PAL, Surat for buying a home?</strong><br>
+                        PAL is a luxury locality to buy an apartment, as compared to other areas in the surrounding areas. This locality ranks #3 in Top 100 in Surat. Some of the popular features of PAL, Surat are:<br>
+                        - Close to Employment Hubs<br>
+                        - Near Planned Metro Station<br>
+                        - Proximity to Airport<br>
+                        - Home to PAL Lake<br><br>
+                    
+                        <!-- The existing residents of PAL gave it an average rating of 4.3, out of 5. Most of the reviews mention that this locality has:<br>
+                        - Good Public Transport<br>
+                        - Easy Cab/Auto Availability<br>
+                        - Good Hospitals are nearby<br>
+                        - Safe at Night<br>
+                        - No Power Cuts<br>
+                        - Good Schools are nearby<br><br>
+                    
+                        The ratings are based on 29 total reviews.<br><br> -->
+                    
+                        <strong>How is PAL for investment?</strong><br>
+                        PAL presents a reasonable opportunity for those considering property investments, as it offers a luxury investment option compared to nearby areas. There are expected infrastructural developments in nearby areas, which may impact real estate prices in this specific locality as well. Moreover, Vedant Bellavista is an under-construction project where you can invest in the most preferred property options at a lesser cost and get higher returns, with easy payment plans.<br><br>
+                    
+                        <strong>How is Hare Krishna Group track record?</strong><br>
+                        Hare Krishna Group stands out with a proven track record in the industry. Over the 16 years, it has made a mark in the real estate industry. Hare Krishna Group currently has 2 ongoing projects in its portfolio.
+                    </p>
+                    <h2>Specifications</h2>
+                    <table class="project-details-table">
+                        <thead>
+                            <tr>
+                                <th class="table-header">Overview</th>
+                                <th class="table-header">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-row-title">Towers</td>
+                                <td class="table-row-value">4</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Floors</td>
+                                <td class="table-row-value">12</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Units</td>
+                                <td class="table-row-value">88</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Total Project Area</td>
+                                <td class="table-row-value">1.7151585 acres (6.9K sq.m.)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>4BHK</h2>
+                    <table class="project-details-table">
+                        <thead>
+                            <tr>
+                                <th class="table-header">Room Type</th>
+                                <th class="table-header">Ft</th>
+                                <th class="table-header">sq.ft.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-row-title">Living Room</td>
+                                <td class="table-row-value">22' 6'' X 18' 0''</td>
+                                <td class="table-row-value">405</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Kitchen</td>
+                                <td class="table-row-value"> 11' 0'' X 16' 10''</td>
+                                <td class="table-row-value">185.9</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Master Bedroom</td>
+                                <td class="table-row-value"> 17' 0'' X 12' 0''</td>
+                                <td class="table-row-value">204</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Bedroom 2</td>
+                                <td class="table-row-value"> 17' 0'' X 12' 0''</td>
+                                <td class="table-row-value">204</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Bedroom 3</td>
+                                <td class="table-row-value"> 11' 6'' X 16' 0''</td>
+                                <td class="table-row-value">184</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Guest Bedroom</td>
+                                <td class="table-row-value"> 11' 0'' X 15' 6''</td>
+                                <td class="table-row-value">170.5</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Toilet 1</td>
+                                <td class="table-row-value"> 5' 4'' X 10' 1''</td>
+                                <td class="table-row-value">53.53</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Toilet 2</td>
+                                <td class="table-row-value"> 13' 8'' X 6' 6''</td>
+                                <td class="table-row-value">88.73</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Toilet 3</td>
+                                <td class="table-row-value"> 5' 0'' X 8' 4''</td>
+                                <td class="table-row-value">41.5</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Toilet 4</td>
+                                <td class="table-row-value"> 13' 8'' X 6' 6''</td>
+                                <td class="table-row-value">88.9</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Powder Room</td>
+                                <td class="table-row-value"> 5' 0'' X 4' 0''</td>
+                                <td class="table-row-value">20</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Wash Room</td>
+                                <td class="table-row-value"> 11' 0'' X 5' 0''</td>
+                                <td class="table-row-value">55</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Dining</td>
+                                <td class="table-row-value"> 11' 0'' X 18' 4''</td>
+                                <td class="table-row-value">201</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Deck</td>
+                                <td class="table-row-value"> 12' 0'' X 6' 0''</td>
+                                <td class="table-row-value">72</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>5BHK Lower Level</h2>
+                    <table class="project-details-table">
+                        <thead>
+                            <tr>
+                                <th class="table-header">Room Type</th>
+                                <th class="table-header">Ft</th>
+                                <th class="table-header">sq.ft.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-row-title">Living Room</td>
+                                <td class="table-row-value"> 39' 6'' X 18' 8''</td>
+                                <td class="table-row-value">405</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Kitchen</td>
+                                <td class="table-row-value"> 16' 2'' X 14' 0''</td>
+                                <td class="table-row-value">185.9</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Master Bedroom</td>
+                                <td class="table-row-value"> 13' 0'' X 19' 0''</td>
+                                <td class="table-row-value">204</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Bedroom 2</td>
+                                <td class="table-row-value"> 17' 0'' X 12' 0''</td>
+                                <td class="table-row-value">204</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Bedroom 3</td>
+                                <td class="table-row-value"> 11' 6'' X 16' 0''</td>
+                                <td class="table-row-value">184</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Toilet 1</td>
+                                <td class="table-row-value"> 13' 8'' X 6' 6''</td>
+                                <td class="table-row-value">53.53</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Toilet 2</td>
+                                <td class="table-row-value"> 13' 8'' X 6' 6''</td>
+                                <td class="table-row-value">88.73</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Toilet 3</td>
+                                <td class="table-row-value"> 9' 8'' X 7' 0''</td>
+                                <td class="table-row-value">41.5</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Store</td>
+                                <td class="table-row-value"> 4' 10'' X 5' 0''</td>
+                                <td class="table-row-value">88.9</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Powder Room</td>
+                                <td class="table-row-value"> 4' 0'' X 5' 4''</td>
+                                <td class="table-row-value">20</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Wash Room</td>
+                                <td class="table-row-value"> 11' 0'' X 5' 0''</td>
+                                <td class="table-row-value">55</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Lift</td>
+                                <td class="table-row-value"> 5' 0'' X 5' 0''</td>
+                                <td class="table-row-value">201</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Dining</td>
+                                <td class="table-row-value"> 11' 0'' X 18' 4''</td>
+                                <td class="table-row-value">201</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Deck</td>
+                                <td class="table-row-value"> 56' 10'' X 6' 0''</td>
+                                <td class="table-row-value">72</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>5BHK Upper Level</h2>
+                    <table class="project-details-table">
+                        <thead>
+                            <tr>
+                                <th class="table-header">Room Type</th>
+                                <th class="table-header">Ft</th>
+                                <th class="table-header">sq.ft.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-row-title">Master Bedroom</td>
+                                <td class="table-row-value"> 17' 0'' X 22' 0''</td>
+                                <td class="table-row-value">204</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Bedroom 2</td>
+                                <td class="table-row-value"> 13' 0'' X 19' 0''</td>
+                                <td class="table-row-value">204</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Toilet 1</td>
+                                <td class="table-row-value"> 11' 0'' X 12' 8''</td>
+                                <td class="table-row-value">53.53</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Toilet 2</td>
+                                <td class="table-row-value"> 14' 5'' X 12' 8''</td>
+                                <td class="table-row-value">88.73</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Lift</td>
+                                <td class="table-row-value"> 5' 0'' X 5' 0''</td>
+                                <td class="table-row-value">201</td>
+                            </tr>
+                            <tr>
+                                <td class="table-row-title">Deck</td>
+                                <td class="table-row-value"> 17' 0'' X 15' 8''</td>
+                                <td class="table-row-value">72</td>
+                            </tr>
+                        </tbody>
+                    </table>
+ 
+                </div>
+            </div>
+
+            <div class="body-wrapper">
+                <!-- brochure section  -->
+                <div class="brochure-section">
+                    <div class="brochure-header">Brochure Viewer</div>
+                    <div class="brochure-viewer">
+                        <!-- PDF Page Viewer -->
+                        <canvas id="pdfCanvas"></canvas>
+                    </div>
+                    <div class="controls">
+                        <button id="prevBtn" disabled>Previous</button>
+                        <span id="pageIndicator">Page 1 of 3</span>
+                        <button id="nextBtn">Next</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <h2 class="card-title">Why you should consider Vedant Bellavista?</h2>
+                    <ul class="card-list">
+                        <li class="card-list-item">25 plus amenities</li>
+                        <li class="card-list-item">20000 sqft landscape garden</li>
+                        <li class="card-list-item">Well ventilated buildings</li>
+                    </ul>
+                    <a class="view-more-link" onclick="openPopup()">View 1 more →</a>
+                    <!-- Popup Modal -->
+                    <div id="popup" class="popup">
+                        <div class="popup-content1">
+                            <span class="close-btn" onclick="closePopup()">&times;</span>
+                            <h2>Why you should consider Vedant Bellavista?</h2>
+                            <ul>
+                                <li>Campus only for 100 exclusive families</li>
+                                <li>30 Feet wide deck balcony</li>
+                                <li>Roof top solar panel and EV charging points</li>
+                                <li>Two car parking for each flat</li>
+                                <li>Lavish entrance foyer with elegant design</li>
+                                <li>State-of-the-art 2 high-speed automatic elevators</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-container">
+                        <div>
+                            <p style="margin: 0; font-weight: normal;">DEVELOPED BY</p>
+                            <strong>Vedant Group</strong>
+                        </div>
+                        <img src="https://imagecdn.99acres.com/media1/25910/19/518219147O-1726294717722.jpg" alt="Vedant Group Logo" class="footer-logo">
+                    </div>
+                    <a class="contact-builder-btn" onclick="openContactPopup()">Contact Builder</a>
+                    <!-- Contact Form Popup -->
+                    <div id="contact-popup" class="popup">
+                        <div class="popup-content2">
+                        <span class="close-btn" onclick="closeContactPopup()">&times;</span>
+                        <h2>Contact Builder</h2>
+                        <form id="contact-form">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+                    
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+                    
+                            <label for="message">Your Message:</label><br>
+                            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="review-section">
+                <div class="flexreview">
+                    <h3>Ratings</h3>
+                    <p><strong>Average Rating</strong></p>
+                    <div class="rating">
+                        <span class="stars">
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star filled">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </span>
+                        <span class="rating-text"><span class="strong-rating">4.3 </span>/ 5</span>
+                    </div>
+                </div>
+                <div class="review-features">
+                    <p><strong>Most mentioned features:</strong></p>
+                    <ul>
+                        <li>Good Public Transport</li>
+                        <li>Easy Cab/Auto Availability</li>
+                        <li>Good Hospitals are nearby</li>
+                        <li>Safe at Night</li>
+                        <li>No Power Cuts</li>
+                        <li>Good Schools are nearby</li>
+                    </ul>
+                </div> 
+            </div> -->
+            
+            
+            <section class="faq-section">
+                <div class="faq-container">
+                    <h2>Frequently Asked Questions</h2>
+                
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(0)">
+                        <strong>Q: Is PAL safe?</strong>
+                      </div>
+                      <div class="faq-answer" id="faq-answer-0">
+                        <p>You should know that former and existing residents have rated this locality 4/5 on safety. This means it is a good area where safety is not a concern.</p>
+                      </div>
+                    </div>
+                
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(1)">
+                        <strong>Q: What sports amenities are available at Vedant Bellavista?</strong>
+                      </div>
+                      <div class="faq-answer" id="faq-answer-1">
+                        <p>Vedant Bellavista has a Cricket Pitch and Indoor Games facilities.</p>
+                      </div>
+                    </div>
+                
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(2)">
+                        <strong>Q: What are the security features of Vedant Bellavista?</strong>
+                      </div>
+                      <div class="faq-answer" id="faq-answer-2">
+                        <p>Vedant Bellavista offers a Security Cabin to ensure all residents feel safe and secure.</p>
+                      </div>
+                    </div>
+                
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(3)">
+                        <strong>Q: Who are the major builders/brokers dealing in Vedant Bellavista?</strong>
+                      </div>
+                      <div class="faq-answer" id="faq-answer-3">
+                        <p>Vedant Group and Green Land Property are some of the major builders/brokers dealing in this project.</p>
+                      </div>
+                    </div>
+                
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(4)">
+                        <strong>Q: Are there any reputed medical facilities nearby Vedant Bellavista?</strong>
+                      </div>
+                      <div class="faq-answer" id="faq-answer-4">
+                        <p>Some of the reputed medical facilities near Vedant Bellavista are Sarjan Maternity and Gynec Hospital, Anmol Eye Hospital, and Nihar Hospital Surat.</p>
+                      </div>
+                    </div>
+                
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(5)">
+                        <strong>Q: How many residential projects are there in PAL, Surat?</strong>
+                      </div>
+                      <div class="faq-answer" id="faq-answer-5">
+                        <p>There are 38 under-construction projects in this locality. Around 49 projects are ready in this area. For those looking for new projects, there are 18 options in PAL, Surat.</p>
+                      </div>
+                    </div>
+                
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(6)">
+                        <strong>Q: Where is Vedant Bellavista located?</strong>
+                      </div>
+                      <div class="faq-answer" id="faq-answer-6">
+                        <p>The project is located in PAL, Surat. <a href="#">Click to view project details</a></p>
+                      </div>
+                    </div>
+                
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(7)">
+                        <strong>Q: When will I get the possession in Vedant Bellavista?</strong>
+                      </div>
+                      <div class="faq-answer" id="faq-answer-7">
+                        <p>The project is currently under construction. <a href="#">Click to view project details</a></p>
+                      </div>
+                    </div>
+                
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(8)">
+                        <strong>Q: Is Vedant Bellavista RERA approved?</strong>
+                      </div>
+                      <div class="faq-answer" id="faq-answer-8">
+                        <p>Yes, the project is approved by RERA.</p>
+                      </div>
+                    </div>
+                
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleAnswer(9)">
+                        <strong>Q: Are there any other projects by this builder in Surat?</strong>
+                      </div>
+                      <div class="faq-answer" id="faq-answer-9">
+                        <p>The other project by Hare Krishna Group in this city is Vikrant Vedant Antilla.</p>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+    </div>
+
+    <my-footer></my-footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+
+        <script>
+        // Wait for the DOM to load
+        document.addEventListener("DOMContentLoaded", function () {
+          const readMoreBtn = document.getElementById("read-more-btn");
+          const hiddenContent = document.getElementById("hidden-content");
+    
+          // Add click event listener
+          readMoreBtn.addEventListener("click", function () {
+            if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+              hiddenContent.style.display = "block"; // Show content
+              readMoreBtn.textContent = "Read Less"; // Change button text
+            } else {
+              hiddenContent.style.display = "none"; // Hide content
+              readMoreBtn.textContent = "Read More"; // Revert button text
+            }
+          });
+        });
+
+        document.getElementById("download-brochure-btn").addEventListener("click", function () {
+            // Programmatically create a link element
+            const link = document.createElement("a");
+            link.href = "../images/test.pdf"; // Update with the actual path to your PDF
+            link.download = "Vedant_Bellavista_Brochure.pdf"; // Set the desired download file name
+            link.click(); // Trigger the download
+        });
+
+        // JavaScript to handle the gallery popup
+    document.getElementById("show-gallery-btn").addEventListener("click", function () {
+        document.getElementById("gallery-popup").style.display = "flex"; // Show the gallery
+    });
+
+    document.getElementById("close-gallery-btn").addEventListener("click", function () {
+        document.getElementById("gallery-popup").style.display = "none"; // Hide the gallery
+    });
+
+    // Select all zoomable images and initialize variables
+        // Select all zoomable images and initialize variables
+        const zoomableImages = Array.from(document.querySelectorAll('.zoomable'));
+        let currentIndex = -1;
+
+        // Open lightbox and show the clicked image
+        zoomableImages.forEach((image, index) => {
+            image.addEventListener('click', function () {
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImage = document.getElementById('lightbox-image');
+                currentIndex = index; // Set current index to the clicked image
+                lightboxImage.src = this.src; // Set the clicked image source
+                lightbox.style.display = 'flex'; // Show the lightbox
+            });
+        });
+
+        // Close lightbox
+        document.getElementById('close-lightbox-btn').addEventListener('click', function () {
+            document.getElementById('lightbox').style.display = 'none'; // Hide the lightbox
+        });
+
+        // Navigate to the previous image
+        document.getElementById('prev-lightbox-btn').addEventListener('click', function () {
+            const lightboxImage = document.getElementById('lightbox-image');
+            
+            // Fade out the current image before switching
+            lightboxImage.style.opacity = 0;
+            
+            setTimeout(() => {
+                if (currentIndex > 0) {
+                    currentIndex--; // Move to the previous image
+                } else {
+                    currentIndex = zoomableImages.length - 1; // Loop to the last image
+                }
+                lightboxImage.src = zoomableImages[currentIndex].src;
+                
+                // Fade in the new image after the switch
+                setTimeout(() => {
+                    lightboxImage.style.opacity = 1;
+                }, 50); // Small delay to ensure opacity change is noticeable
+            }, 500); // Match the transition duration
+        });
+
+        // Navigate to the next image
+        document.getElementById('next-lightbox-btn').addEventListener('click', function () {
+            const lightboxImage = document.getElementById('lightbox-image');
+            
+            // Fade out the current image before switching
+            lightboxImage.style.opacity = 0;
+            
+            setTimeout(() => {
+                if (currentIndex < zoomableImages.length - 1) {
+                    currentIndex++; // Move to the next image
+                } else {
+                    currentIndex = 0; // Loop to the first image
+                }
+                lightboxImage.src = zoomableImages[currentIndex].src;
+                
+                // Fade in the new image after the switch
+                setTimeout(() => {
+                    lightboxImage.style.opacity = 1;
+                }, 10); // Small delay to ensure opacity change is noticeable
+            }, 250); // Match the transition duration
+        });
+
+         // Select Elements
+        const showMoreBtn = document.getElementById('showMoreBtn');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const closeBtn = document.getElementById('closeBtn');
+
+        // Show Popup
+        showMoreBtn.addEventListener('click', () => {
+            popupOverlay.style.display = 'flex';
+        });
+
+        // Close Popup
+        closeBtn.addEventListener('click', () => {
+            popupOverlay.style.display = 'none';
+        });
+
+        // Close Popup when clicking outside content
+        popupOverlay.addEventListener('click', (e) => {
+            if (e.target === popupOverlay) {
+                popupOverlay.style.display = 'none';
+            }
+        });
+
+        const toggleHeader = document.getElementById('toggleHeader');
+        const constructionDetails = document.getElementById('constructionDetails');
+        const dropdownArrow = document.getElementById('dropdownArrow');
+        const statusText = document.getElementById('statusText');
+
+        let isExpanded = false;
+
+        toggleHeader.addEventListener('click', () => {
+            isExpanded = !isExpanded;
+            if (isExpanded) {
+                constructionDetails.style.display = 'block';
+                dropdownArrow.classList.add('rotate');
+            } else {
+                constructionDetails.style.display = 'none';
+                dropdownArrow.classList.remove('rotate');
+            }
+        });
+
+        const floorPlanBtn = document.getElementById('floorPlanBtn');
+        const sizeBtn = document.getElementById('sizeBtn');
+        const floorPlanContent = document.getElementById('floorPlanContent');
+        const sizeContent = document.getElementById('sizeContent');
+
+        const buttons = [floorPlanBtn, sizeBtn];
+        const contents = [floorPlanContent, sizeContent];
+
+        function toggleContent(activeIndex) {
+            buttons.forEach((btn, index) => {
+                if (index === activeIndex) {
+                    btn.classList.add('active');
+                    contents[index].classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                    contents[index].classList.remove('active');
+                }
+            });
+        }
+
+        floorPlanBtn.addEventListener('click', () => toggleContent(0));
+        sizeBtn.addEventListener('click', () => toggleContent(1));
+
+        const pages = document.querySelectorAll('.pdf-page');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const pageIndicator = document.getElementById('pageIndicator');
+
+        let currentPage = 0;
+
+        function updatePage() {
+            // Hide all pages and show the current one
+            pages.forEach((page, index) => {
+                page.classList.toggle('active', index === currentPage);
+            });
+
+            // Update page indicator
+            pageIndicator.textContent = `Page ${currentPage + 1} of ${pages.length}`;
+
+            // Enable/disable buttons based on current page
+            prevBtn.disabled = currentPage === 0;
+            nextBtn.disabled = currentPage === pages.length - 1;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 0) {
+                currentPage--;
+                updatePage();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < pages.length - 1) {
+                currentPage++;
+                updatePage();
+            }
+        });
+
+        const viewFacilitiesBtn = document.getElementById('viewFacilitiesBtn');
+        const popupOverlay11 = document.getElementById('popupOverlay1');
+        const closeBtn11 = document.getElementById('closeBtn1');
+
+        // Show Popup
+        viewFacilitiesBtn.addEventListener('click', () => {
+            popupOverlay1.style.display = 'flex';
+        });
+
+        // Close Popup
+        closeBtn1.addEventListener('click', () => {
+            popupOverlay1.style.display = 'none';
+        });
+
+        // Close popup when clicking outside content
+        window.addEventListener('click', (e) => {
+            if (e.target === popupOverlay1) {
+                popupOverlay1.style.display = 'none';
+            }
+        });
+
+        function toggleAnswer(index) {
+            const answer = document.getElementById('faq-answer-' + index);
+            
+            // Toggle visibility of the answer
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+            }
+            // Get the iframe element
+            const iframe = document.getElementById('video-frame');
+
+        // Add event listener for when the video starts playing
+        iframe.addEventListener('load', function() {
+            // Play button clicked, apply zoom effect
+            const iframeWindow = iframe.contentWindow;
+            const playButton = iframeWindow.document.querySelector('button.ytp-play-button');
+
+            if (playButton) {
+                playButton.addEventListener('click', function() {
+                    iframe.style.transform = 'scale(1.2)'; // Zoom effect on play
+                });
+            }
+        });
+
+        // Reset the zoom when the video is paused or stopped
+        iframe.addEventListener('pause', function() {
+            iframe.style.transform = 'scale(3)'; // Reset zoom when paused
+        });
+
+        iframe.addEventListener('ended', function() {
+            iframe.style.transform = 'scale(3)'; // Reset zoom when video ends
+        });
+
+        // pdf 
+        const url = '../images/test.pdf'; // Replace with your PDF URL
+
+        let currentPage1 = 1;
+        let pdfDoc = null;
+        let totalPages = 0;
+
+        // Load the PDF
+        pdfjsLib.getDocument(url).promise.then(function(doc) {
+            pdfDoc = doc;
+            totalPages = doc.numPages;
+            renderPage(currentPage1);
+            updatePageIndicator();
+            updateButtons();
+        });
+
+        // Render a specific page
+        function renderPage(pageNum) {
+            pdfDoc.getPage(pageNum).then(function(page) {
+                const canvas = document.getElementById('pdfCanvas');
+                const ctx = canvas.getContext('2d');
+
+                const viewport = page.getViewport({ scale: 1 });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                page.render({
+                    canvasContext: ctx,
+                    viewport: viewport
+                });
+            });
+        }
+
+        // Update the page indicator
+        function updatePageIndicator() {
+            document.getElementById('pageIndicator').textContent = `Page ${currentPage1} of ${totalPages}`;
+        }
+
+        // Update the Next and Previous buttons
+        function updateButtons() {
+            document.getElementById('prevBtn').disabled = currentPage1 <= 1;
+            document.getElementById('nextBtn').disabled = currentPage1 >= totalPages;
+        }
+
+        // Event listeners for the buttons
+        document.getElementById('prevBtn').addEventListener('click', function() {
+            if (currentPage1 > 1) {
+                currentPage1--;
+                renderPage(currentPage1);
+                updatePageIndicator();
+                updateButtons();
+            }
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', function() {
+            if (currentPage1 < totalPages) {
+                currentPage1++;
+                renderPage(currentPage1);
+                updatePageIndicator();
+                updateButtons();
+            }
+        });
+
+        document.querySelectorAll('.thumbnail').forEach((thumbnail) => {
+            thumbnail.addEventListener('click', (e) => {
+                const fullImageUrl = e.target.getAttribute('data-full-image');
+                const lightboxImage = document.getElementById('lightbox-image');
+                lightboxImage.src = fullImageUrl; // Update the zoomed image
+            });
+        });
+
+        // Open the popup
+        function openPopup() {
+        document.getElementById("popup").style.display = "block";
+        }
+
+        // Close the popup
+        function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        }
+
+        // Close the popup when clicking outside of the content
+        window.onclick = function(event) {
+        if (event.target === document.getElementById("popup")) {
+            closePopup();
+        }
+        }
+
+        // Open the Contact Builder popup
+        function openContactPopup() {
+        document.getElementById("contact-popup").style.display = "block";
+        }
+
+        // Close the Contact Builder popup
+        function closeContactPopup() {
+        document.getElementById("contact-popup").style.display = "none";
+        }
+
+        // Close the popup when clicking outside of the content
+        window.onclick = function(event) {
+        if (event.target === document.getElementById("contact-popup")) {
+            closeContactPopup();
+        }
+        }
+
+
+        </script>
+      
+
+</body>
+</html>

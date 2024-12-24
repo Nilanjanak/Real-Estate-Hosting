@@ -1,0 +1,207 @@
+<!-- commercial_surat.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plots</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <my-header></my-header>
+    <div class="slide"></div>
+    <main class="product-page-display">
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="filter-container">
+                <h3>Filter Search</h3>
+                <form id="filterForm">
+                    <label for="type">Type:</label>
+                    <select id="type">
+                        <option value="Land">Land</option>
+                    </select>
+
+                    <label for="location">Location:</label>
+                    <select id="location">
+                        <option value="all">All</option>
+                        <option value="Surat">Surat</option>
+                    </select>
+
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="all">All</option>
+                        <option value="Residential Plot">Residential Plot</option>
+                        <option value="Commercial Plot">Commercial Plot</option>
+                        <option value="Industrial Plot">Industrial Plot</option>
+                        <option value="Mixed Use Plot">Mixed Use Plot</option>
+                        <option value="Agricultural Plot">Agricultural Plot</option>
+                        <option value="Recreational Plot">Recreational Plot</option>
+                    </select>
+
+                    <label for="cost">Cost:</label>
+                    <select id="cost">
+                        <option value="All">All</option>
+                        <option value="50L">Up to 50L</option>
+                        <option value="1Cr">50L to 1Cr</option>
+                        <option value="1Cr+">Above 1Cr</option>
+                    </select>
+
+                    <label for="sort">Sort:</label>
+                    <select id="sort" onchange="applyFilters()">
+                        <option value="default">Default</option>
+                        <option value="low-high">Price: Low to High</option>
+                        <option value="high-low">Price: High to Low</option>
+                    </select>
+
+                    <button type="button" onclick="applyFilters()">Apply Filters</button>
+                </form>
+            </div>
+        </section>
+        
+        <h1 class="page-head">Plots</h1>
+
+        <section id="category1" class="bouquet-section">
+            
+            <div id="results" class="bouquet-grid">
+                <!-- Project 1 -->
+                <a href="land1.html" class="bouquet-card" 
+                   data-type="Land"
+                   data-location="Surat"
+                   data-size="Residential Plot" 
+                   data-cost="50L">
+                    <img src="https://imagecdn.99acres.com/media1/19987/13/399753832O-1729948996980.jpg" alt="Raghuvir Steffon">
+                    <h3>Freehold Plot</h3>
+                    <p><strong>Shreeji Promoters</strong> offers prime land in Surat, ideal for commercial or residential development, featuring ample space, strategic location, and high visibility for future growth.</p>
+                    <!-- <span class="price">₹30L - ₹50L</span> --> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="land2.html" class="bouquet-card" 
+                   data-type="Land"
+                   data-location="Surat"
+                   data-size="Commercial Plot" 
+                   data-cost="50L">
+                    <img src="https://imagecdn.99acres.com/media1/19987/13/399753838O-1729948981119.jpg" alt="Rajhans Blue Cloud">
+                    <h3>Leasehold Plot</h3>
+                    <p><strong>Vishal Developers</strong> offers a prime plot of land in Surat, perfect for residential or commercial use, with excellent accessibility, ample space, and a highly visible location for growth.</p>
+                    <!-- <span class="price">₹25L - ₹40L</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="land3.html" class="bouquet-card" 
+                   data-type="Land"
+                   data-location="Surat"
+                   data-size="Industrial Plot" 
+                   data-cost="1Cr">
+                    <img src="https://imagecdn.99acres.com/media1/19987/13/399753832O-1729948996980.jpg" alt="AeroBiz Connect">
+                    <h3>Jai BhavaniGated Community Plot</h3>
+                    <p><strong>Jai Bhavani</strong> Realty presents a strategic land parcel in Surat, ideal for development, offering abundant space, prime location, and high visibility, perfect for both commercial and residential projects.</p>
+                    <!-- <span class="price">₹80L - ₹1Cr</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="Land4.html" class="bouquet-card" 
+                   data-type="Land"
+                   data-location="Surat"
+                   data-size="Mixed Use Plot" 
+                   data-cost="1Cr">
+                    <img src="images/surat_commercial4.jpg" alt="Surat Commercial Project 4">
+                    <h3>Surat Trade Center</h3>
+                    <p>Mixed Use Plot spaces with a focus on business and corporate offices.</p>
+                    <!-- <span class="price">₹1Cr - ₹1.5Cr</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 5 -->
+                <a href="Land5.html" class="bouquet-card" 
+                   data-type="Land"
+                   data-location="Surat"
+                   data-size="Agricultural Plot" 
+                   data-cost="50L">
+                    <img src="images/surat_commercial5.jpg" alt="Surat Commercial Project 5">
+                    <h3>Crystal Mall</h3>
+                    <p>Prime Agricultural Plot available for commercial stores and boutiques.</p>
+                    <!-- <span class="price">₹40L - ₹55L</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 6 -->
+                <a href="Land6.html" class="bouquet-card" 
+                   data-type="Land"
+                   data-location="Surat"
+                   data-size="Industrial Plot" 
+                   data-cost="50L">
+                    <img src="images/surat_commercial6.jpg" alt="Surat Commercial Project 6">
+                    <h3>Sunshine Plaza</h3>
+                    <p>Affordable office spaces with modern amenities in Surat’s business district.</p>
+                    <!-- <span class="price">₹30L - ₹50L</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 7 -->
+                <a href="commercial7.html" class="bouquet-card" 
+                   data-type="Commercial"
+                   data-location="Surat"
+                   data-size="Recreational Plot" 
+                   data-cost="1Cr">
+                    <img src="images/surat_commercial7.jpg" alt="Surat Commercial Project 7">
+                    <h3>The Imperial Plaza</h3>
+                    <p>Recreational Plot spaces with luxury amenities, perfect for large corporations.</p>
+                    <!-- <span class="price">₹1Cr - ₹2Cr</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 8 -->
+                <a href="commercial8.html" class="bouquet-card" 
+                   data-type="Commercial"
+                   data-location="Surat"
+                   data-size="Agricultural Plot" 
+                   data-cost="50L">
+                    <img src="images/surat_commercial8.jpg" alt="Surat Commercial Project 8">
+                    <h3>Vibrant Trade Complex</h3>
+                    <p>Agricultural Plots available for businesses in a high footfall area of Surat.</p>
+                    <!-- <span class="price">₹40L - ₹65L</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 9 -->
+                <a href="commercial9.html" class="bouquet-card" 
+                   data-type="Commercial"
+                   data-location="Surat"
+                   data-size="Commercial Plot" 
+                   data-cost="50L">
+                    <img src="images/surat_commercial9.jpg" alt="Surat Commercial Project 9">
+                    <h3>Surat Office Park</h3>
+                    <p>Compact office spaces for startups and SMEs in a central location.</p>
+                    <!-- <span class="price">₹30L - ₹45L</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 10 -->
+                <a href="commercial10.html" class="bouquet-card" 
+                   data-type="Commercial"
+                   data-location="Surat"
+                   data-size="Mixed Use Plot" 
+                   data-cost="1Cr+">
+                    <img src="images/surat_commercial10.jpg" alt="Surat Commercial Project 10">
+                    <h3>Surat Corporate Towers</h3>
+                    <p>Exclusive office spaces for corporate giants with premium amenities.</p>
+                    <!-- <span class="price">₹1.5Cr - ₹3Cr</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <my-footer></my-footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

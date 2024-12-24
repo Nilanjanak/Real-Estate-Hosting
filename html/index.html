@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <!-- Favicon (website title icon) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Optionally, include multiple sizes for different devices -->
+    <link rel="icon" href="../images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+     <link rel="icon" href="images/favicon-192x192.png" sizes="192x192" type="image/png">
+     <link rel="icon" href="images/favicon-512x512.png" sizes="512x512" type="image/png">
+     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+     <!-- fontawesome  -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- css  -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!--Header-->
+    <my-header></my-header>
+
+
+    <!-- Image Slider (Product Ads) -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Multiple Slides (Product Ads) -->
+            <div class="slide">
+                <img src="images/slide1.jpg" alt="Slider1">
+                <!-- <h2>Slider1</h2> -->
+            </div>
+            <div class="slide">
+                <img src="images/slide2.jpg" alt="Slider2">
+                <!-- <h2>Slider2</h2> -->
+            </div>
+            <div class="slide">
+                <img src="images/slide3.jpg" alt="Slider3">
+                <!-- <h2>Slider3</h2> -->
+            </div>
+            <!-- Add more slides here -->
+        </div>
+
+        <!-- Navigation for the slider -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
+
+    <main>
+        <!-- Category 1: Roses -->
+
+        <h1 class="page-head-index">Purchase or Rent Properties anytime anywhere...</h1>
+
+        <section id="category1" class="bouquet-div">
+
+            <h2 class="bouquet-card" data-type="Residential">Residential Properties</h2>
+            <div id="results" class="bouquet-grid">
+                <!-- Project 1 -->
+                <a href="project1.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="2 BHK" 
+                   data-cost="50L">
+                    <img src="https://newprojects.99acres.com/projects/keshav_infra_surat/keshav_vedant_bellavista/images/xy2jg8l_1724653282_514182695_optOrig.jpg" alt="Vedant Bellavista">
+                    <h3>Vedant Bellavista</h3>
+                    <p>Vedant Bellavista is a premium residential complex located in Pal, Surat. The property offers
+                        a variety of 4 BHK and 5 BHK apartments with spacious layouts.</p> <br> <br>
+                    <!-- <span class="price">₹25L - ₹40L</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="project2.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="3 BHK" 
+                   data-cost="1Cr">
+                    <img src="https://newprojects.99acres.com/projects/shilalekh_corporation/shilalekh_imperia/images/ui6jlln_1694784437_445710566_optOrig.jpg" alt="Shilalekh Imperia">
+                    <h3>Shilalekh Imperia</h3>
+                    <p>Shilalekh Imperia is an exclusive residential complex located in the heart of Surat. Offering a range of 2 BHK and 3 BHK apartments, the property features expansive layouts, contemporary design, and state-of-the-art amenities.</p>
+                    <!-- <span class="price">₹50L - ₹1Cr</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="project3.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="2 BHK" 
+                   data-cost="50L">
+                    <img src="https://newprojects.99acres.com/projects/infra_sahaj/sahaj_panoramic/images/t63mpio1_optOrig.jpg" alt="Sahaj Panoramic">
+                    <h3>Sahaj Panoramic</h3>
+                    <p>Sahaj Panoramic is an exclusive residential complex located in Surat. The property offers a selection of luxurious 3 BHK and 4 BHK apartments featuring spacious, thoughtfully designed layouts with modern architecture.</p>
+                    <!-- <span class="price">₹35L - ₹55L</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="project4.html" class="bouquet-card" 
+                   data-type="Residential"
+                   data-location="Surat"
+                   data-size="3 BHK" 
+                   data-cost="1Cr">
+                    <img src="https://newprojects.99acres.com/projects/infra_sahaj/sahaj_panoramic/images/ki7jqygf_optOrig.jpg" alt="Sahaj Panoramic">
+                    <h3>Sahaj Panoramic</h3>
+                    <p>Sahaj Panoramic is an exclusive residential complex located in Surat. The property offers a selection of luxurious 3 BHK and 4 BHK apartments featuring spacious, thoughtfully designed layouts with modern architecture.</p>
+                    <!-- <span class="price">₹1Cr - ₹1.5Cr</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project page -->
+                <a href="residential.html" class="bouquet-card" 
+                data-type="Residential"
+                data-location="Surat">
+                    <img src="images/residential.jpg" alt="More Residential properties">
+                    <h3>More Residential Properties</h3>
+                    <p>More properties used for living purposes. Residential real estate is the most common form of real estate.</p><br><br><br>
+                    <button class="add-to-cart-btn">Read More...</button>
+                </a>
+            </div>
+        </section>
+        
+        <section id="category1" class="bouquet-div">
+
+            <h2 class="bouquet-card" data-type="Commercial">Commercial Properties</h2>
+            <div id="results" class="bouquet-grid">
+                <!-- Project 1 -->
+                <a href="commercial1.html" class="bouquet-card" 
+                   data-type="Commercial"
+                   data-location="Surat"
+                   data-size="Retail Space" 
+                   data-cost="50L">
+                    <img src="https://newprojects.99acres.com/projects/raghuvir_builders_surat/raghuvir_steffon/images/tuhofey_1727778226_521920917_O.jpg" alt="Raghuvir Steffon">
+                    <h3>Raghuvir Steffon</h3>
+                    <p>Raghuvir Steffon is a premium showroom located in the heart of Surat. The property offers a variety of retail and office spaces designed to cater to diverse business needs.</p>
+                    <!-- <span class="price">₹30L - ₹50L</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="commercial2.html" class="bouquet-card" 
+                   data-type="Commercial"
+                   data-location="Surat"
+                   data-size="Small Office" 
+                   data-cost="50L">
+                    <img src="images/retail.jpg" alt="Rajhans Blue Cloud">
+                    <h3>Rajhans Blue Cloud</h3>
+                    <p>Rajhans Blue Cloud is a premium commercial development in Surat, offering modern office and retail spaces designed for businesses seeking a strategic and professional environment.</p>
+                    <!-- <span class="price">₹25L - ₹40L</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="commercial3.html" class="bouquet-card" 
+                   data-type="Commercial"
+                   data-location="Surat"
+                   data-size="Medium Office" 
+                   data-cost="1Cr">
+                    <img src="https://newprojects.99acres.com/projects/spacekreators_realty/spacekreators_aerobiz_connect/images/3cze86v_1726204746_517951663_optOrig.jpg" alt="AeroBiz Connect">
+                    <h3>AeroBiz Connect</h3>
+                    <p>AeroBiz Connect is an elite commercial development strategically located opposite Surat International Airport. Designed for the privileged few, this high-end project offers a range of showrooms and corporate office spaces.</p>
+                    <!-- <span class="price">₹80L - ₹1Cr</span> <br> -->
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+                
+                <!-- Project page -->
+                <a href="commercial.html" class="bouquet-card"
+                data-type="Commercial"
+                data-location="Surat">
+                    <img src="images/commercial.jpg" alt="More Commercial properties">
+                    <h3>More Commercial Properties</h3>
+                    <p>More properties used for comertial purposes. Comertial real estate is the second most common form of real estate.</p><br><br><br>
+                    <button class="add-to-cart-btn">Read More...</button>
+                </a>
+            </div>
+        </section>
+        <section id="category1" class="bouquet-div">
+
+            <h2 class="bouquet-card" data-type="Land">Plots</h2>
+            <div id="results" class="bouquet-grid">
+                <!-- Project 1 -->
+                <a href="land1.html" class="bouquet-card" 
+                data-type="Land"
+                data-location="Surat"
+                data-size="Plot Area" 
+                data-cost="₹50L">
+                    <img src="../images/subdivided.jpg" alt="Raghuvir Land Plot">
+                    <h3>Raghuvir Land Plot</h3>
+                    <p>Raghuvir Land Plot offers a prime piece of land for sale in Surat, perfect for construction, investment, or agricultural purposes. The plot is located in a strategic area with great accessibility.</p>
+                    <span class="price">₹50L</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="land2.html" class="bouquet-card" 
+                data-type="Land"
+                data-location="Ahmedabad"
+                data-size="Plot Area" 
+                data-cost="₹75L">
+                    <img src="../images/raw.jpg" alt="Green Valley Land">
+                    <h3>Green Valley Land</h3>
+                    <p>Green Valley Land is an expansive plot located in the peaceful outskirts of Ahmedabad, offering ample space for residential or commercial development.</p>
+                    <span class="price">₹75L</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="land3.html" class="bouquet-card" 
+                data-type="Land"
+                data-location="Pune"
+                data-size="Plot Area" 
+                data-cost="₹1Cr">
+                    <img src="../images/agricultural.jpg" alt="Sunrise Park Land">
+                    <h3>Sunrise Park Land</h3>
+                    <p>Sunrise Park Land is a vast plot located in the thriving suburbs of Pune, ideal for residential, commercial, or mixed-use development projects.</p>
+                    <span class="price">₹1Cr</span> <br>
+                    <button href="enquiry.html" class="add-to-cart-btn">Read More...</button>
+                </a>
+
+                <!-- Project page -->
+                <a href="land.html" class="bouquet-card">
+                    <img src="images/land1.jpg" alt="More Plots">
+                    <h3>More Plots</h3>
+                    <p>More properties used for comertial purposes. Comertial real estate is the second most common form of real estate.</p><br><br><br>
+                    <button class="add-to-cart-btn">Read More...</button>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Repeat for other categories -->
+    </main>
+
+    <!--Footer-->
+    <my-footer></my-footer>
+
+    <!--JavaScript link-->
+    <script src="/js/script.js"></script>
+    <script>
+        //Filter function
+        function applyFilters() {
+            const typeFilter = document.getElementById('type').value;
+            const locationFilter = document.getElementById('location').value;
+            // const sizeFilter = document.getElementById('size').value;
+            // const costFilter = document.getElementById('cost').value;
+
+            const properties = document.querySelectorAll('.bouquet-card');
+            
+            // Loop through all properties and show/hide based on filters
+            properties.forEach(property => {
+                const type = property.getAttribute('data-type');
+                const location = property.getAttribute('data-location');
+                // const size = property.getAttribute('data-size');
+                // const cost = property.getAttribute('data-cost');
+
+                let showProperty = true;
+
+                // Apply type filter
+                if (typeFilter !== 'All' && type !== typeFilter) {
+                    showProperty = false;
+                }
+
+                // Apply location filter
+                if (locationFilter !== 'all' && location !== locationFilter) {
+                    showProperty = false;
+                }
+
+                // Apply size filter
+                // if (sizeFilter !== 'all' && size !== sizeFilter) {
+                //     showProperty = false;
+                // }
+
+                // Apply cost filter
+                // if (costFilter !== 'All' && cost !== costFilter) {
+                //     showProperty = false;
+                // }
+
+                // Show/hide property based on criteria
+                if (showProperty) {
+                    property.style.display = 'block';
+                } else {
+                    property.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

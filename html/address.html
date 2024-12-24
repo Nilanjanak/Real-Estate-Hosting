@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Addresses - Real Estate</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--Header-->
+    <my-header></my-header>
+    <div class="slide"></div>
+    
+    <!--Main Address Container-->
+    <div class="address-container">
+        <div class="address-header">
+            <h1>Saved Addresses</h1>
+            <button id="add-address-btn" class="settings-button">Add New Address</button>
+        </div>
+        
+        <div class="address-list-container">
+            <ul id="address-list" class="address-list">
+                <!-- Dynamically populate this list with saved addresses -->
+                <li class="address-item">
+                    <div class="initial">
+                        <h1>Name</h1>
+                        <h2>Address</h2>
+                        <h2>Email</h2>
+                    </div>
+                    <div class="data">
+                        <h2>John Doe</h2>
+                        <h3>1234 Elm Street, Springfield</h3>
+                        <h3>nd3uber@gmail.com</h3>
+                    </div>
+                    <div class="button">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </li>
+                <li class="address-item">
+                    <div class="initial">
+                        <h1>Name</h1>
+                        <h2>Address</h2>
+                        <h2>Email</h2>
+                    </div>
+                    <div class="data">
+                        <h2>John Doe</h2>
+                        <h3>1234 Elm Street, Springfield</h3>
+                        <h3>nd3uber@gmail.com</h3>
+                    </div>
+                    <div class="button">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </li>
+                <li class="address-item">
+                    <div class="initial">
+                        <h1>Name</h1>
+                        <h2>Address</h2>
+                        <h2>Email</h2>
+                    </div>
+                    <div class="data">
+                        <h2>John Doe</h2>
+                        <h3>1234 Elm Street, Springfield</h3>
+                        <h3>nd3uber@gmail.com</h3>
+                    </div>
+                    <div class="button">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <my-footer></my-footer>
+    
+    <!-- Hidden Form for Adding/Editing -->
+    <div id="address-form-popup" class="form-popup">
+        <div class="popup-content">
+            <h2 id="popup-title">Add New Address</h2>
+            <input type="text" id="address-input" class="form-input" placeholder="Enter address here">
+            <button id="save-address-btn" class="settings-button">Save</button>
+            <button id="cancel-btn" class="settings-button cancel-btn">Cancel</button>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
